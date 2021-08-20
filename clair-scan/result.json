@@ -1,0 +1,2528 @@
+{
+  "applicationId" : "centos-clair",
+  "scanId" : "d2ca89da47ee4b77819d524c912eadba",
+  "reportHtmlUrl" : "http://localhost:8070/ui/links/application/centos-clair/report/d2ca89da47ee4b77819d524c912eadba",
+  "reportPdfUrl" : "http://localhost:8070/ui/links/application/centos-clair/report/d2ca89da47ee4b77819d524c912eadba/pdf",
+  "reportDataUrl" : "http://localhost:8070/api/v2/applications/centos-clair/reports/d2ca89da47ee4b77819d524c912eadba/raw",
+  "policyAction" : "None",
+  "policyEvaluationResult" : {
+    "alerts" : [ {
+      "trigger" : {
+        "policyId" : "10e5c2a4b3144f7e96b6bc732ec554d8",
+        "policyName" : "Security-Low",
+        "threatLevel" : 3,
+        "policyViolationId" : "c544c8a5a46945b6af29dd6a9af7e91c",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "bash",
+              "version" : "4.4.19-12.el8"
+            }
+          },
+          "hash" : "147c684005ab3b37fea5",
+          "constraintFacts" : [ {
+            "constraintId" : "2c47a218bfba4737b10aee7ecc41bbd2",
+            "constraintName" : "Low risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 0",
+              "reason" : "Found security vulnerability RHSA-2021:1679 with severity >= 0 (severity = 3.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1679",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 4",
+              "reason" : "Found security vulnerability RHSA-2021:1679 with severity < 4 (severity = 3.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1679",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "bash"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "4.4.19-12.el8"
+            } ],
+            "name" : "bash : 4.4.19-12.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "10e5c2a4b3144f7e96b6bc732ec554d8",
+        "policyName" : "Security-Low",
+        "threatLevel" : 3,
+        "policyViolationId" : "112ee25993404e6fafd03e0092e642f1",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "libdb",
+              "version" : "5.3.28-39.el8"
+            }
+          },
+          "hash" : "80c7960a6371bd2e41e6",
+          "constraintFacts" : [ {
+            "constraintId" : "2c47a218bfba4737b10aee7ecc41bbd2",
+            "constraintName" : "Low risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 0",
+              "reason" : "Found security vulnerability RHSA-2021:1675 with severity >= 0 (severity = 3.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1675",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 4",
+              "reason" : "Found security vulnerability RHSA-2021:1675 with severity < 4 (severity = 3.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1675",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "libdb"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "5.3.28-39.el8"
+            } ],
+            "name" : "libdb : 5.3.28-39.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "10e5c2a4b3144f7e96b6bc732ec554d8",
+        "policyName" : "Security-Low",
+        "threatLevel" : 3,
+        "policyViolationId" : "9e631ca50ae94aa581c4815b7b84b57b",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "libdb-utils",
+              "version" : "5.3.28-39.el8"
+            }
+          },
+          "hash" : "c05ef414957a0327ddcf",
+          "constraintFacts" : [ {
+            "constraintId" : "2c47a218bfba4737b10aee7ecc41bbd2",
+            "constraintName" : "Low risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 0",
+              "reason" : "Found security vulnerability RHSA-2021:1675 with severity >= 0 (severity = 3.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1675",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 4",
+              "reason" : "Found security vulnerability RHSA-2021:1675 with severity < 4 (severity = 3.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1675",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "libdb-utils"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "5.3.28-39.el8"
+            } ],
+            "name" : "libdb-utils : 5.3.28-39.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "144ddaa38fe54507bc1dbc0231b2185f",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "bind-export-libs",
+              "version" : "32:9.11.20-5.el8"
+            }
+          },
+          "hash" : "1d676e412aeca96e613d",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:0670 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:0670",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:0670 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:0670",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "bind-export-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "32:9.11.20-5.el8"
+            } ],
+            "name" : "bind-export-libs : 32:9.11.20-5.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "ec535cfdaa3d4e4f99804cafc816b9da",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "bind-export-libs",
+              "version" : "32:9.11.20-5.el8"
+            }
+          },
+          "hash" : "1d676e412aeca96e613d",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:1989 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1989",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:1989 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1989",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "bind-export-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "32:9.11.20-5.el8"
+            } ],
+            "name" : "bind-export-libs : 32:9.11.20-5.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "f2c53d15ea4542f2b1d6057607e6beb7",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "dhcp-client",
+              "version" : "12:4.3.6-41.el8"
+            }
+          },
+          "hash" : "d9f94c93f0987fbdbea1",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:2359 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2359",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:2359 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2359",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "dhcp-client"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "12:4.3.6-41.el8"
+            } ],
+            "name" : "dhcp-client : 12:4.3.6-41.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "efdc6c7b6a614fd29dc02e3bcec88b33",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "dhcp-common",
+              "version" : "12:4.3.6-41.el8"
+            }
+          },
+          "hash" : "a52941bce6a679b3ee55",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:2359 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2359",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:2359 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2359",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "dhcp-common"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "12:4.3.6-41.el8"
+            } ],
+            "name" : "dhcp-common : 12:4.3.6-41.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "598c589ac68340e1b32f37ab55964816",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "dhcp-libs",
+              "version" : "12:4.3.6-41.el8"
+            }
+          },
+          "hash" : "4e1a47df626d0cdb49dd",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:2359 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2359",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:2359 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2359",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "dhcp-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "12:4.3.6-41.el8"
+            } ],
+            "name" : "dhcp-libs : 12:4.3.6-41.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "843926cf4ea4497ea255794e4b41b656",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "glib2",
+              "version" : "2.56.4-8.el8"
+            }
+          },
+          "hash" : "d09cd173900f63c80a66",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:2170 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2170",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:2170 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2170",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "glib2"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "2.56.4-8.el8"
+            } ],
+            "name" : "glib2 : 2.56.4-8.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "ddc74391855540ac89a8bc3767057fca",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "gnutls",
+              "version" : "3.6.14-6.el8"
+            }
+          },
+          "hash" : "31ea9c419c7b1608471b",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:1206 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1206",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:1206 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1206",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "gnutls"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "3.6.14-6.el8"
+            } ],
+            "name" : "gnutls : 3.6.14-6.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "a16602fa57964cf48669e9dac0deb57f",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "nettle",
+              "version" : "3.4.1-2.el8"
+            }
+          },
+          "hash" : "ad9e399faf962bab78a3",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:1206 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1206",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:1206 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1206",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "nettle"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "3.4.1-2.el8"
+            } ],
+            "name" : "nettle : 3.4.1-2.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "4adbf73275fc4c15af96857c7a7b3352",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "openssl-libs",
+              "version" : "1:1.1.1g-11.el8"
+            }
+          },
+          "hash" : "b59f769bb92eecc81dac",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2020:5476 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2020:5476",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2020:5476 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2020:5476",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "openssl-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "1:1.1.1g-11.el8"
+            } ],
+            "name" : "openssl-libs : 1:1.1.1g-11.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "36a162b4ed5a4d6eaf94a8d8b66fdd67",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "openssl-libs",
+              "version" : "1:1.1.1g-11.el8"
+            }
+          },
+          "hash" : "b59f769bb92eecc81dac",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:1024 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1024",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:1024 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1024",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "openssl-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "1:1.1.1g-11.el8"
+            } ],
+            "name" : "openssl-libs : 1:1.1.1g-11.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "0b3893445b5743e4bec607013e1d068c",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "systemd",
+              "version" : "239-41.el8_3"
+            }
+          },
+          "hash" : "8fa60921d444cea71f75",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:2717 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2717",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:2717 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2717",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "systemd"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "239-41.el8_3"
+            } ],
+            "name" : "systemd : 239-41.el8_3"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "0cb8ee0ed1af42f9928c59d3a082114c",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "systemd-libs",
+              "version" : "239-41.el8_3"
+            }
+          },
+          "hash" : "200df13a51456fd370d1",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:2717 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2717",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:2717 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2717",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "systemd-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "239-41.el8_3"
+            } ],
+            "name" : "systemd-libs : 239-41.el8_3"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "4b89b36331b84b9f975a21466974d026",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "systemd-pam",
+              "version" : "239-41.el8_3"
+            }
+          },
+          "hash" : "0c4d6b7e163f6583c7a2",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:2717 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2717",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:2717 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2717",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "systemd-pam"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "239-41.el8_3"
+            } ],
+            "name" : "systemd-pam : 239-41.el8_3"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "98090ec0d73b40fcac301c203a5d6210",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "f4e71242b5bc427fa52acd8a7bba9363",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "systemd-udev",
+              "version" : "239-41.el8_3"
+            }
+          },
+          "hash" : "44b7aa14f690a4d92eed",
+          "constraintFacts" : [ {
+            "constraintId" : "56f6162c62b74fd79ec70950a7ec8d04",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability RHSA-2021:2717 with severity >= 7 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2717",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability RHSA-2021:2717 with severity < 9 (severity = 8.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2717",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "systemd-udev"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "239-41.el8_3"
+            } ],
+            "name" : "systemd-udev : 239-41.el8_3"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "88f4c6292f754df39c3cbe7097ae92d9",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "cpio",
+              "version" : "2.12-8.el8"
+            }
+          },
+          "hash" : "68618eacf4df215a884d",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1582 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1582",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1582 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1582",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "cpio"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "2.12-8.el8"
+            } ],
+            "name" : "cpio : 2.12-8.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "b588bc9e68694176931dd46f897e5bb1",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "curl",
+              "version" : "7.61.1-14.el8"
+            }
+          },
+          "hash" : "9361e88e46b9bf2f93e4",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1610 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1610",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1610 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1610",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "curl"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "7.61.1-14.el8"
+            } ],
+            "name" : "curl : 7.61.1-14.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "ce36abdcf0d7496c939d49266fe219bb",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "glib2",
+              "version" : "2.56.4-8.el8"
+            }
+          },
+          "hash" : "d09cd173900f63c80a66",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1586 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1586",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1586 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1586",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "glib2"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "2.56.4-8.el8"
+            } ],
+            "name" : "glib2 : 2.56.4-8.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "77568913e2e747f08f879f3b991de229",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "glib2",
+              "version" : "2.56.4-8.el8"
+            }
+          },
+          "hash" : "d09cd173900f63c80a66",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:3058 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:3058",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:3058 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:3058",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "glib2"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "2.56.4-8.el8"
+            } ],
+            "name" : "glib2 : 2.56.4-8.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "6ece17c64c03467dbe5f9bc23f3cb1c1",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "glibc",
+              "version" : "2.28-127.el8"
+            }
+          },
+          "hash" : "96732a1d329ecb82d624",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1585 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1585",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1585 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1585",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "glibc"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "2.28-127.el8"
+            } ],
+            "name" : "glibc : 2.28-127.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "52a51b77c3c34a2b83917486c9e3fc68",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "glibc-common",
+              "version" : "2.28-127.el8"
+            }
+          },
+          "hash" : "3add2824a40340cee25f",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1585 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1585",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1585 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1585",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "glibc-common"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "2.28-127.el8"
+            } ],
+            "name" : "glibc-common : 2.28-127.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "9c2c48315d994770aa6aac8462733128",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "glibc-minimal-langpack",
+              "version" : "2.28-127.el8"
+            }
+          },
+          "hash" : "18e983b98ee51b46de36",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1585 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1585",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1585 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1585",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "glibc-minimal-langpack"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "2.28-127.el8"
+            } ],
+            "name" : "glibc-minimal-langpack : 2.28-127.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "bcb96bfd0aa5404c82be741ac99dc180",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "gnutls",
+              "version" : "3.6.14-6.el8"
+            }
+          },
+          "hash" : "31ea9c419c7b1608471b",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2020:5483 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2020:5483",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2020:5483 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2020:5483",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "gnutls"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "3.6.14-6.el8"
+            } ],
+            "name" : "gnutls : 3.6.14-6.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "c17fa1fa99444a5b8cd21d6e675e1c0e",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "krb5-libs",
+              "version" : "1.18.2-5.el8"
+            }
+          },
+          "hash" : "c91711210612deccb4f6",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1593 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1593",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1593 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1593",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "krb5-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "1.18.2-5.el8"
+            } ],
+            "name" : "krb5-libs : 1.18.2-5.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "d10bb05311c34e989c73e36d10b9d43a",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "libarchive",
+              "version" : "3.3.2-9.el8"
+            }
+          },
+          "hash" : "55c04bfb640776a3d755",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHEA-2021:1580 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHEA-2021:1580",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHEA-2021:1580 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHEA-2021:1580",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "libarchive"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "3.3.2-9.el8"
+            } ],
+            "name" : "libarchive : 3.3.2-9.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "53d6e96d4de64eceb7e319687cdba44e",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "libcurl-minimal",
+              "version" : "7.61.1-14.el8"
+            }
+          },
+          "hash" : "f182412d9d50580c4ff5",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1610 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1610",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1610 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1610",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "libcurl-minimal"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "7.61.1-14.el8"
+            } ],
+            "name" : "libcurl-minimal : 7.61.1-14.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "8a66301c551545e79e3fd05ee68f02a6",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "libxml2",
+              "version" : "2.9.7-8.el8"
+            }
+          },
+          "hash" : "2bd33dede0d09543a43b",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1597 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1597",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1597 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1597",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "libxml2"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "2.9.7-8.el8"
+            } ],
+            "name" : "libxml2 : 2.9.7-8.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "46015e73b1054d0c8f0886ce2e9d296c",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "libxml2",
+              "version" : "2.9.7-8.el8"
+            }
+          },
+          "hash" : "2bd33dede0d09543a43b",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:2569 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2569",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:2569 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2569",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "libxml2"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "2.9.7-8.el8"
+            } ],
+            "name" : "libxml2 : 2.9.7-8.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "becc5f86408c46d4932b9e2c72430145",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "lz4-libs",
+              "version" : "1.8.3-2.el8"
+            }
+          },
+          "hash" : "71a66cbd2033a5c4c111",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:2575 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2575",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:2575 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2575",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "lz4-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "1.8.3-2.el8"
+            } ],
+            "name" : "lz4-libs : 1.8.3-2.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "72005e7eee73434b97155c9a4220c3b2",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "p11-kit",
+              "version" : "0.23.14-5.el8_0"
+            }
+          },
+          "hash" : "a6e150bab2dcc881c282",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1609 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1609",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1609 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1609",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "p11-kit"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "0.23.14-5.el8_0"
+            } ],
+            "name" : "p11-kit : 0.23.14-5.el8_0"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "1d009ecbfa984e66b4704458f6fd32a8",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "p11-kit-trust",
+              "version" : "0.23.14-5.el8_0"
+            }
+          },
+          "hash" : "d253e49f5934be89b421",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1609 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1609",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1609 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1609",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "p11-kit-trust"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "0.23.14-5.el8_0"
+            } ],
+            "name" : "p11-kit-trust : 0.23.14-5.el8_0"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "63112a45da904c92873a7f85be0525c6",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "platform-python",
+              "version" : "3.6.8-31.el8"
+            }
+          },
+          "hash" : "704cbcc7f4e01d604955",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1633 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1633",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1633 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1633",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "platform-python"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "3.6.8-31.el8"
+            } ],
+            "name" : "platform-python : 3.6.8-31.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "65e2408fe84f4647bc6bafede57115a4",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "python3-libs",
+              "version" : "3.6.8-31.el8"
+            }
+          },
+          "hash" : "cac8b2a5d0a2aadd2378",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1633 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1633",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1633 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1633",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "python3-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "3.6.8-31.el8"
+            } ],
+            "name" : "python3-libs : 3.6.8-31.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "c6fe52fdacc74002aca0fa5a61a11d3b",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "python3-rpm",
+              "version" : "4.14.3-4.el8"
+            }
+          },
+          "hash" : "cef654c5b0925c51b601",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:2574 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2574",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:2574 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2574",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "python3-rpm"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "4.14.3-4.el8"
+            } ],
+            "name" : "python3-rpm : 4.14.3-4.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "237f1884bd3a4f6cb9b06f50571616ca",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "rpm",
+              "version" : "4.14.3-4.el8"
+            }
+          },
+          "hash" : "cbcdc6a353b442823af4",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:2574 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2574",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:2574 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2574",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "rpm"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "4.14.3-4.el8"
+            } ],
+            "name" : "rpm : 4.14.3-4.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "675520718c01439399b1902ebb4ccc13",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "rpm-build-libs",
+              "version" : "4.14.3-4.el8"
+            }
+          },
+          "hash" : "8094f2d11e0070291319",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:2574 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2574",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:2574 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2574",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "rpm-build-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "4.14.3-4.el8"
+            } ],
+            "name" : "rpm-build-libs : 4.14.3-4.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "23bdf20035e14dcea0bcff36fabbd1c7",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "rpm-libs",
+              "version" : "4.14.3-4.el8"
+            }
+          },
+          "hash" : "a30ccb7c30c6e73bc713",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:2574 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2574",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:2574 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:2574",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "rpm-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "4.14.3-4.el8"
+            } ],
+            "name" : "rpm-libs : 4.14.3-4.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "1d1709cfedca4e7cb1eb793dcaa3b427",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "sqlite-libs",
+              "version" : "3.26.0-11.el8"
+            }
+          },
+          "hash" : "93f3d0e8f898c3902648",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1581 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1581",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1581 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1581",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "sqlite-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "3.26.0-11.el8"
+            } ],
+            "name" : "sqlite-libs : 3.26.0-11.el8"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "416d956967764734a659107fab653ae6",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "systemd",
+              "version" : "239-41.el8_3"
+            }
+          },
+          "hash" : "8fa60921d444cea71f75",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1611 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1611",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1611 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1611",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "systemd"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "239-41.el8_3"
+            } ],
+            "name" : "systemd : 239-41.el8_3"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "34a73f5f741e4f9ab541f6ba8a5950a1",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "systemd-libs",
+              "version" : "239-41.el8_3"
+            }
+          },
+          "hash" : "200df13a51456fd370d1",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1611 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1611",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1611 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1611",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "systemd-libs"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "239-41.el8_3"
+            } ],
+            "name" : "systemd-libs : 239-41.el8_3"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "af5e2f5e6b3349eaae655d21dd7e8a8b",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "systemd-pam",
+              "version" : "239-41.el8_3"
+            }
+          },
+          "hash" : "0c4d6b7e163f6583c7a2",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1611 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1611",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1611 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1611",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "systemd-pam"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "239-41.el8_3"
+            } ],
+            "name" : "systemd-pam : 239-41.el8_3"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e65941ffc8fc46ddb61ef7c263d418ad",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "e3902e0ef7c94caba457ec8b1dd39760",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "centos-8",
+            "coordinates" : {
+              "name" : "systemd-udev",
+              "version" : "239-41.el8_3"
+            }
+          },
+          "hash" : "44b7aa14f690a4d92eed",
+          "constraintFacts" : [ {
+            "constraintId" : "13c23fcff8ac4d83b6cbb00ca9ca8aec",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability RHSA-2021:1611 with severity >= 4 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1611",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability RHSA-2021:1611 with severity < 7 (severity = 6.0)",
+              "reference" : {
+                "value" : "RHSA-2021:1611",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "name",
+              "value" : "systemd-udev"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "version",
+              "value" : "239-41.el8_3"
+            } ],
+            "name" : "systemd-udev : 239-41.el8_3"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    } ],
+    "affectedComponentCount" : 34,
+    "criticalComponentCount" : 12,
+    "severeComponentCount" : 19,
+    "moderateComponentCount" : 3,
+    "criticalPolicyViolationCount" : 14,
+    "severePolicyViolationCount" : 27,
+    "moderatePolicyViolationCount" : 3,
+    "grandfatheredPolicyViolationCount" : 0,
+    "totalComponentCount" : 34
+  }
+}

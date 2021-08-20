@@ -1,0 +1,2605 @@
+{
+    "image": "centos:latest (centos 8.3.2011)",
+    "vulnerabilities": [
+        {
+            "vulnerability": "CVE-2019-18276",
+            "featurename": "bash",
+            "featureversion": "4.4.19-12.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-18276",
+            "fixedBy": "4.4.19-14.el8",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in disable_priv_mode in shell.c in GNU Bash through 5.0 patch 11. By default, if Bash is run with its effective UID not equal to its real UID, it will drop privileges by setting its effective UID to its real UID. However, it does so incorrectly. On Linux and other systems that support \"saved UID\" functionality, the saved UID is not dropped. An attacker with command execution in the shell can use \"enable -f\" for runtime loading of a new builtin, which can be a shared object that calls setuid() and therefore regains privileges. However, binaries running with an effective UID of 0 are unaffected."
+        },
+        {
+            "vulnerability": "CVE-2020-8625",
+            "featurename": "bind-export-libs",
+            "featureversion": "32:9.11.20-5.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-8625",
+            "fixedBy": "32:9.11.20-5.el8_3.1",
+            "namespace": "centos-8",
+            "description": "BIND servers are vulnerable if they are running an affected version and are configured to use GSS-TSIG features. In a configuration which uses BIND's default settings the vulnerable code path is not exposed, but a server can be rendered vulnerable by explicitly setting valid values for the tkey-gssapi-keytab or tkey-gssapi-credentialconfiguration options. Although the default configuration is not vulnerable, GSS-TSIG is frequently used in networks where BIND is integrated with Samba, as well as in mixed-server environments that combine BIND servers with Active Directory domain controllers. The most likely outcome of a successful exploitation of the vulnerability is a crash of the named process. However, remote code execution, while unproven, is theoretically possible. Affects: BIND 9.5.0 -> 9.11.27, 9.12.0 -> 9.16.11, and versions BIND 9.11.3-S1 -> 9.11.27-S1 and 9.16.8-S1 -> 9.16.11-S1 of BIND Supported Preview Edition. Also release versions 9.17.0 -> 9.17.1 of the BIND 9.17 development branch"
+        },
+        {
+            "vulnerability": "CVE-2021-25215",
+            "featurename": "bind-export-libs",
+            "featureversion": "32:9.11.20-5.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-25215",
+            "fixedBy": "32:9.11.26-4.el8_4",
+            "namespace": "centos-8",
+            "description": "In BIND 9.0.0 -> 9.11.29, 9.12.0 -> 9.16.13, and versions BIND 9.9.3-S1 -> 9.11.29-S1 and 9.16.8-S1 -> 9.16.13-S1 of BIND Supported Preview Edition, as well as release versions 9.17.0 -> 9.17.11 of the BIND 9.17 development branch, when a vulnerable version of named receives a query for a record triggering the flaw described above, the named process will terminate due to a failed assertion check. The vulnerability affects all currently maintained BIND 9 branches (9.11, 9.11-S, 9.16, 9.16-S, 9.17) as well as all other versions of BIND 9."
+        },
+        {
+            "vulnerability": "CVE-2021-25218",
+            "featurename": "bind-export-libs",
+            "featureversion": "32:9.11.20-5.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-25218",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "In BIND 9.16.19, 9.17.16. Also, version 9.16.19-S1 of BIND Supported Preview Edition When a vulnerable version of named receives a query under the circumstances described above, the named process will terminate due to a failed assertion check. The vulnerability affects only BIND 9 releases 9.16.19, 9.17.16, and release 9.16.19-S1 of the BIND Supported Preview Edition."
+        },
+        {
+            "vulnerability": "CVE-2021-25214",
+            "featurename": "bind-export-libs",
+            "featureversion": "32:9.11.20-5.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-25214",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "In BIND 9.8.5 -> 9.8.8, 9.9.3 -> 9.11.29, 9.12.0 -> 9.16.13, and versions BIND 9.9.3-S1 -> 9.11.29-S1 and 9.16.8-S1 -> 9.16.13-S1 of BIND 9 Supported Preview Edition, as well as release versions 9.17.0 -> 9.17.11 of the BIND 9.17 development branch, when a vulnerable version of named receives a malformed IXFR triggering the flaw described above, the named process will terminate due to a failed assertion the next time the transferred secondary zone is refreshed."
+        },
+        {
+            "vulnerability": "CVE-2018-1000876",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-1000876",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "binutils version 2.32 and earlier contains a Integer Overflow vulnerability in objdump, bfd_get_dynamic_reloc_upper_bound,bfd_canonicalize_dynamic_reloc that can result in Integer overflow trigger heap overflow. Successful exploitation allows execution of arbitrary code.. This attack appear to be exploitable via Local. This vulnerability appears to have been fixed in after commit 3a551c7a1b80fca579461774860574eabfd7f18f."
+        },
+        {
+            "vulnerability": "CVE-2018-20623",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20623",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "In GNU Binutils 2.31.1, there is a use-after-free in the error function in elfcomm.c when called from the process_archive function in readelf.c via a crafted ELF file."
+        },
+        {
+            "vulnerability": "CVE-2018-20671",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20671",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "load_specific_debug_section in objdump.c in GNU Binutils through 2.31.1 contains an integer overflow vulnerability that can trigger a heap-based buffer overflow via a crafted section size."
+        },
+        {
+            "vulnerability": "CVE-2018-20673",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20673",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, contains an integer overflow vulnerability (for \"Create an array for saving the template argument values\") that can trigger a heap-based buffer overflow, as demonstrated by nm."
+        },
+        {
+            "vulnerability": "CVE-2019-9074",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9074",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. It is an out-of-bounds read leading to a SEGV in bfd_getl32 in libbfd.c, when called from pex64_get_runtime_function in pei-x86_64.c."
+        },
+        {
+            "vulnerability": "CVE-2019-9075",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9075",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. It is a heap-based buffer overflow in _bfd_archive_64_bit_slurp_armap in archive64.c."
+        },
+        {
+            "vulnerability": "CVE-2019-9077",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9077",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in GNU Binutils 2.32. It is a heap-based buffer overflow in process_mips_specific in readelf.c via a malformed MIPS option section."
+        },
+        {
+            "vulnerability": "CVE-2021-20197",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20197",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There is an open race window when writing output in the following utilities in GNU binutils version 2.35 and earlier:ar, objcopy, strip, ranlib. When these utilities are run as a privileged user (presumably as part of a script updating binaries across different users), an unprivileged user can trick these utilities into getting ownership of arbitrary files through a symlink."
+        },
+        {
+            "vulnerability": "CVE-2021-3487",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3487",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There's a flaw in the BFD library of binutils in versions before 2.36. An attacker who supplies a crafted file to an application linked with BFD, and using the DWARF functionality, could cause an impact to system availability by way of excessive memory consumption."
+        },
+        {
+            "vulnerability": "CVE-2018-12641",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-12641",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in arm_pt in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30. Stack Exhaustion occurs in the C++ demangling functions provided by libiberty, and there are recursive stack frames: demangle_arm_hp_template, demangle_class_name, demangle_fund_type, do_type, do_arg, demangle_args, and demangle_nested_args. This can occur during execution of nm-new."
+        },
+        {
+            "vulnerability": "CVE-2018-12697",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-12697",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A NULL pointer dereference (aka SEGV on unknown address 0x000000000000) was discovered in work_stuff_copy_to_from in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30. This can occur during execution of objdump."
+        },
+        {
+            "vulnerability": "CVE-2018-12698",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-12698",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "demangle_template in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30, allows attackers to trigger excessive memory consumption (aka OOM) during the \"Create an array for saving the template argument values\" XNEWVEC call. This can occur during execution of objdump."
+        },
+        {
+            "vulnerability": "CVE-2018-12699",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-12699",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "finish_stab in stabs.c in GNU Binutils 2.30 allows attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact, as demonstrated by an out-of-bounds write of 8 bytes. This can occur during execution of objdump."
+        },
+        {
+            "vulnerability": "CVE-2018-12700",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-12700",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A Stack Exhaustion issue was discovered in debug_write_type in debug.c in GNU Binutils 2.30 because of DEBUG_KIND_INDIRECT infinite recursion."
+        },
+        {
+            "vulnerability": "CVE-2018-12934",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-12934",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "remember_Ktype in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30, allows attackers to trigger excessive memory consumption (aka OOM). This can occur during execution of cxxfilt."
+        },
+        {
+            "vulnerability": "CVE-2018-17360",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-17360",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. a heap-based buffer over-read in bfd_getl32 in libbfd.c allows an attacker to cause a denial of service through a crafted PE file. This vulnerability can be triggered by the executable objdump."
+        },
+        {
+            "vulnerability": "CVE-2018-17794",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-17794",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a NULL pointer dereference in work_stuff_copy_to_from when called from iterate_demangle_function."
+        },
+        {
+            "vulnerability": "CVE-2018-17985",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-17985",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption problem caused by the cplus_demangle_type function making recursive calls to itself in certain scenarios involving many 'P' characters."
+        },
+        {
+            "vulnerability": "CVE-2018-18309",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-18309",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. An invalid memory address dereference was discovered in read_reloc in reloc.c. The vulnerability causes a segmentation fault and application crash, which leads to denial of service, as demonstrated by objdump, because of missing _bfd_clear_contents bounds checking."
+        },
+        {
+            "vulnerability": "CVE-2018-18483",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-18483",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The get_count function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31, allows remote attackers to cause a denial of service (malloc called with the result of an integer-overflowing calculation) or possibly have unspecified other impact via a crafted string, as demonstrated by c++filt."
+        },
+        {
+            "vulnerability": "CVE-2018-18484",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-18484",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. Stack Exhaustion occurs in the C++ demangling functions provided by libiberty, and there is a stack consumption problem caused by recursive stack frames: cplus_demangle_type, d_bare_function_type, d_function_type."
+        },
+        {
+            "vulnerability": "CVE-2018-18605",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-18605",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A heap-based buffer over-read issue was discovered in the function sec_merge_hash_lookup in merge.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31, because _bfd_add_merge_section mishandles section merges when size is not a multiple of entsize. A specially crafted ELF allows remote attackers to cause a denial of service, as demonstrated by ld."
+        },
+        {
+            "vulnerability": "CVE-2018-18606",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-18606",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in the merge_strings function in merge.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. There is a NULL pointer dereference in _bfd_add_merge_section when attempting to merge sections with large alignments. A specially crafted ELF allows remote attackers to cause a denial of service, as demonstrated by ld."
+        },
+        {
+            "vulnerability": "CVE-2018-18607",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-18607",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in elf_link_input_bfd in elflink.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31. There is a NULL pointer dereference in elf_link_input_bfd when used for finding STT_TLS symbols without any TLS section. A specially crafted ELF allows remote attackers to cause a denial of service, as demonstrated by ld."
+        },
+        {
+            "vulnerability": "CVE-2018-18700",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-18700",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption vulnerability resulting from infinite recursion in the functions d_name(), d_encoding(), and d_local_name() in cp-demangle.c. Remote attackers could leverage this vulnerability to cause a denial-of-service via an ELF file, as demonstrated by nm."
+        },
+        {
+            "vulnerability": "CVE-2018-18701",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-18701",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in cp-demangle.c in GNU libiberty, as distributed in GNU Binutils 2.31. There is a stack consumption vulnerability resulting from infinite recursion in the functions next_is_type_qual() and cplus_demangle_type() in cp-demangle.c. Remote attackers could leverage this vulnerability to cause a denial-of-service via an ELF file, as demonstrated by nm."
+        },
+        {
+            "vulnerability": "CVE-2018-19932",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-19932",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils through 2.31. There is an integer overflow and infinite loop caused by the IS_CONTAINED_BY_LMA macro in elf.c."
+        },
+        {
+            "vulnerability": "CVE-2018-20002",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20002",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The _bfd_generic_read_minisymbols function in syms.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31, has a memory leak via a crafted ELF file, leading to a denial of service (memory consumption), as demonstrated by nm."
+        },
+        {
+            "vulnerability": "CVE-2018-20651",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20651",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A NULL pointer dereference was discovered in elf_link_add_object_symbols in elflink.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.31.1. This occurs for a crafted ET_DYN with no program headers. A specially crafted ELF file allows remote attackers to cause a denial of service, as demonstrated by ld."
+        },
+        {
+            "vulnerability": "CVE-2018-20657",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20657",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698."
+        },
+        {
+            "vulnerability": "CVE-2018-6872",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-6872",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The elf_parse_notes function in elf.c in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.30, allows remote attackers to cause a denial of service (out-of-bounds read and segmentation violation) via a note with a large alignment."
+        },
+        {
+            "vulnerability": "CVE-2019-12972",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-12972",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. There is a heap-based buffer over-read in _bfd_doprnt in bfd.c because elf_object_p in elfcode.h mishandles an e_shstrndx section of type SHT_GROUP by omitting a trailing '\\0' character."
+        },
+        {
+            "vulnerability": "CVE-2019-14250",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-14250",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. simple_object_elf_match in simple-object-elf.c does not check for a zero shstrndx value, leading to an integer overflow and resultant heap-based buffer overflow."
+        },
+        {
+            "vulnerability": "CVE-2019-9071",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9071",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. It is a stack consumption issue in d_count_templates_scopes in cp-demangle.c after many recursive calls."
+        },
+        {
+            "vulnerability": "CVE-2020-35448",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35448",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.35.1. A heap-based buffer over-read can occur in bfd_getl_signed_32 in libbfd.c because sh_entsize is not validated in _bfd_elf_slurp_secondary_reloc_section in elf.c."
+        },
+        {
+            "vulnerability": "CVE-2020-35493",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35493",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw exists in binutils in bfd/pef.c. An attacker who is able to submit a crafted PEF file to be parsed by objdump could cause a heap buffer overflow -> out-of-bounds read that could lead to an impact to application availability. This flaw affects binutils versions prior to 2.34."
+        },
+        {
+            "vulnerability": "CVE-2020-35494",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35494",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There's a flaw in binutils /opcodes/tic4x-dis.c. An attacker who is able to submit a crafted input file to be processed by binutils could cause usage of uninitialized memory. The highest threat is to application availability with a lower threat to data confidentiality. This flaw affects binutils versions prior to 2.34."
+        },
+        {
+            "vulnerability": "CVE-2020-35495",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35495",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There's a flaw in binutils /bfd/pef.c. An attacker who is able to submit a crafted input file to be processed by the objdump program could cause a null pointer dereference. The greatest threat from this flaw is to application availability. This flaw affects binutils versions prior to 2.34."
+        },
+        {
+            "vulnerability": "CVE-2020-35496",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35496",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There's a flaw in bfd_pef_scan_start_address() of bfd/pef.c in binutils which could allow an attacker who is able to submit a crafted file to be processed by objdump to cause a NULL pointer dereference. The greatest threat of this flaw is to application availability. This flaw affects binutils versions prior to 2.34."
+        },
+        {
+            "vulnerability": "CVE-2020-35507",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35507",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There's a flaw in bfd_pef_parse_function_stubs of bfd/pef.c in binutils in versions prior to 2.34 which could allow an attacker who is able to submit a crafted file to be processed by objdump to cause a NULL pointer dereference. The greatest threat of this flaw is to application availability."
+        },
+        {
+            "vulnerability": "CVE-2021-20284",
+            "featurename": "binutils",
+            "featureversion": "2.30-79.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20284",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in GNU Binutils 2.35.1, where there is a heap-based buffer overflow in _bfd_elf_slurp_secondary_reloc_section in elf.c due to the number of symbols not calculated correctly. The highest threat from this vulnerability is to system availability."
+        },
+        {
+            "vulnerability": "CVE-2019-12900",
+            "featurename": "bzip2-libs",
+            "featureversion": "1.0.6-26.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-12900",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "BZ2_decompress in decompress.c in bzip2 through 1.0.6 has an out-of-bounds write when there are many selectors."
+        },
+        {
+            "vulnerability": "CVE-2017-18018",
+            "featurename": "coreutils-single",
+            "featureversion": "8.30-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2017-18018",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition."
+        },
+        {
+            "vulnerability": "CVE-2019-14866",
+            "featurename": "cpio",
+            "featureversion": "2.12-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-14866",
+            "fixedBy": "2.12-10.el8",
+            "namespace": "centos-8",
+            "description": "In all versions of cpio before 2.13 does not properly validate input files when generating TAR archives. When cpio is used to create TAR archives from paths an attacker can write to, the resulting archive may contain files with permissions the attacker did not have or in paths he did not have access to. Extracting those archives from a high-privilege user without carefully reviewing them may lead to the compromise of the system."
+        },
+        {
+            "vulnerability": "CVE-2021-38185",
+            "featurename": "cpio",
+            "featureversion": "2.12-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-38185",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "GNU cpio through 2.13 allows attackers to execute arbitrary code via a crafted pattern file, because of a dstring.c ds_fgetstr integer overflow that triggers an out-of-bounds heap write. NOTE: it is unclear whether there are common cases where the pattern file, associated with the -E option, is untrusted data."
+        },
+        {
+            "vulnerability": "CVE-2020-8284",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-8284",
+            "fixedBy": "7.61.1-18.el8",
+            "namespace": "centos-8",
+            "description": "A malicious server can use the FTP PASV response to trick curl 7.73.0 and earlier into connecting back to a given IP address and port, and this way potentially make curl extract information about services that are otherwise private and not disclosed, for example doing port scanning and service banner extractions."
+        },
+        {
+            "vulnerability": "CVE-2020-8285",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-8285",
+            "fixedBy": "7.61.1-18.el8",
+            "namespace": "centos-8",
+            "description": "curl 7.21.0 to and including 7.73.0 is vulnerable to uncontrolled recursion due to a stack overflow issue in FTP wildcard match parsing."
+        },
+        {
+            "vulnerability": "CVE-2020-8286",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-8286",
+            "fixedBy": "7.61.1-18.el8",
+            "namespace": "centos-8",
+            "description": "curl 7.41.0 through 7.73.0 is vulnerable to an improper check for certificate revocation due to insufficient verification of the OCSP response."
+        },
+        {
+            "vulnerability": "CVE-2021-22876",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22876",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "curl 7.1.1 to and including 7.75.0 is vulnerable to an \"Exposure of Private Personal Information to an Unauthorized Actor\" by leaking credentials in the HTTP Referer: header. libcurl does not strip off user credentials from the URL when automatically populating the Referer: HTTP request header field in outgoing HTTP requests, and therefore risks leaking sensitive data to the server that is the target of the second HTTP request."
+        },
+        {
+            "vulnerability": "CVE-2021-22922",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22922",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "When curl is instructed to download content using the metalink feature, thecontents is verified against a hash provided in the metalink XML file.The metalink XML file points out to the client how to get the same contentfrom a set of different URLs, potentially hosted by different servers and theclient can then download the file from one or several of them. In a serial orparallel manner.If one of the servers hosting the contents has been breached and the contentsof the specific file on that server is replaced with a modified payload, curlshould detect this when the hash of the file mismatches after a completeddownload. It should remove the contents and instead try getting the contentsfrom another URL. This is not done, and instead such a hash mismatch is onlymentioned in text and the potentially malicious content is kept in the file ondisk."
+        },
+        {
+            "vulnerability": "CVE-2021-22923",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22923",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "When curl is instructed to get content using the metalink feature, and a user name and password are used to download the metalink XML file, those same credentials are then subsequently passed on to each of the servers from which curl will download or try to download the contents from. Often contrary to the user's expectations and intentions and without telling the user it happened."
+        },
+        {
+            "vulnerability": "CVE-2021-22924",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22924",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse, if one of them matches the setup.Due to errors in the logic, the config matching function did not take 'issuercert' into account and it compared the involved paths *case insensitively*,which could lead to libcurl reusing wrong connections.File paths are, or can be, case sensitive on many systems but not all, and caneven vary depending on used file systems.The comparison also didn't include the 'issuer cert' which a transfer can setto qualify how to verify the server certificate."
+        },
+        {
+            "vulnerability": "CVE-2020-8231",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-8231",
+            "fixedBy": "7.61.1-18.el8",
+            "namespace": "centos-8",
+            "description": "Due to use of a dangling pointer, libcurl 7.29.0 through 7.71.1 can use the wrong connection when sending data."
+        },
+        {
+            "vulnerability": "CVE-2021-22898",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22898",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "curl 7.7 through 7.76.1 suffers from an information disclosure when the `-t` command line option, known as `CURLOPT_TELNETOPTIONS` in libcurl, is used to send variable=content pairs to TELNET servers. Due to a flaw in the option parser for sending NEW_ENV variables, libcurl could be made to pass on uninitialized data from a stack based buffer to the server, resulting in potentially revealing sensitive internal information to the server using a clear-text network protocol."
+        },
+        {
+            "vulnerability": "CVE-2021-22925",
+            "featurename": "curl",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22925",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "curl supports the `-t` command line option, known as `CURLOPT_TELNETOPTIONS`in libcurl. This rarely used option is used to send variable=content pairs toTELNET servers.Due to flaw in the option parser for sending `NEW_ENV` variables, libcurlcould be made to pass on uninitialized data from a stack based buffer to theserver. Therefore potentially revealing sensitive internal information to theserver using a clear-text network protocol.This could happen because curl did not call and use sscanf() correctly whenparsing the string provided by the application."
+        },
+        {
+            "vulnerability": "CVE-2020-35512",
+            "featurename": "dbus",
+            "featureversion": "1:1.12.8-11.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35512",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A use-after-free flaw was found in D-Bus Development branch <= 1.13.16, dbus-1.12.x stable branch <= 1.12.18, and dbus-1.10.x and older branches <= 1.10.30 when a system has multiple usernames sharing the same UID. When a set of policy rules references these usernames, D-Bus may free some memory in the heap, which is still used by data structures necessary for the other usernames sharing the UID, possibly leading to a crash or other undefined behaviors"
+        },
+        {
+            "vulnerability": "CVE-2020-35512",
+            "featurename": "dbus-common",
+            "featureversion": "1:1.12.8-11.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35512",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A use-after-free flaw was found in D-Bus Development branch <= 1.13.16, dbus-1.12.x stable branch <= 1.12.18, and dbus-1.10.x and older branches <= 1.10.30 when a system has multiple usernames sharing the same UID. When a set of policy rules references these usernames, D-Bus may free some memory in the heap, which is still used by data structures necessary for the other usernames sharing the UID, possibly leading to a crash or other undefined behaviors"
+        },
+        {
+            "vulnerability": "CVE-2020-35512",
+            "featurename": "dbus-daemon",
+            "featureversion": "1:1.12.8-11.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35512",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A use-after-free flaw was found in D-Bus Development branch <= 1.13.16, dbus-1.12.x stable branch <= 1.12.18, and dbus-1.10.x and older branches <= 1.10.30 when a system has multiple usernames sharing the same UID. When a set of policy rules references these usernames, D-Bus may free some memory in the heap, which is still used by data structures necessary for the other usernames sharing the UID, possibly leading to a crash or other undefined behaviors"
+        },
+        {
+            "vulnerability": "CVE-2020-35512",
+            "featurename": "dbus-libs",
+            "featureversion": "1:1.12.8-11.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35512",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A use-after-free flaw was found in D-Bus Development branch <= 1.13.16, dbus-1.12.x stable branch <= 1.12.18, and dbus-1.10.x and older branches <= 1.10.30 when a system has multiple usernames sharing the same UID. When a set of policy rules references these usernames, D-Bus may free some memory in the heap, which is still used by data structures necessary for the other usernames sharing the UID, possibly leading to a crash or other undefined behaviors"
+        },
+        {
+            "vulnerability": "CVE-2020-35512",
+            "featurename": "dbus-tools",
+            "featureversion": "1:1.12.8-11.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-35512",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A use-after-free flaw was found in D-Bus Development branch <= 1.13.16, dbus-1.12.x stable branch <= 1.12.18, and dbus-1.10.x and older branches <= 1.10.30 when a system has multiple usernames sharing the same UID. When a set of policy rules references these usernames, D-Bus may free some memory in the heap, which is still used by data structures necessary for the other usernames sharing the UID, possibly leading to a crash or other undefined behaviors"
+        },
+        {
+            "vulnerability": "CVE-2021-25217",
+            "featurename": "dhcp-client",
+            "featureversion": "12:4.3.6-41.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-25217",
+            "fixedBy": "12:4.3.6-44.el8_4.1",
+            "namespace": "centos-8",
+            "description": "In ISC DHCP 4.1-ESV-R1 -> 4.1-ESV-R16, ISC DHCP 4.4.0 -> 4.4.2 (Other branches of ISC DHCP (i.e., releases in the 4.0.x series or lower and releases in the 4.3.x series) are beyond their End-of-Life (EOL) and no longer supported by ISC. From inspection it is clear that the defect is also present in releases from those series, but they have not been officially tested for the vulnerability), The outcome of encountering the defect while reading a lease that will trigger it varies, according to: the component being affected (i.e., dhclient or dhcpd) whether the package was built as a 32-bit or 64-bit binary whether the compiler flag -fstack-protection-strong was used when compiling In dhclient, ISC has not successfully reproduced the error on a 64-bit system. However, on a 32-bit system it is possible to cause dhclient to crash when reading an improper lease, which could cause network connectivity problems for an affected system due to the absence of a running DHCP client process. In dhcpd, when run in DHCPv4 or DHCPv6 mode: if the dhcpd server binary was built for a 32-bit architecture AND the -fstack-protection-strong flag was specified to the compiler, dhcpd may exit while parsing a lease file containing an objectionable lease, resulting in lack of service to clients. Additionally, the offending lease and the lease immediately following it in the lease database may be improperly deleted. if the dhcpd server binary was built for a 64-bit architecture OR if the -fstack-protection-strong compiler flag was NOT specified, the crash will not occur, but it is possible for the offending lease and the lease which immediately followed it to be improperly deleted."
+        },
+        {
+            "vulnerability": "CVE-2021-25217",
+            "featurename": "dhcp-common",
+            "featureversion": "12:4.3.6-41.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-25217",
+            "fixedBy": "12:4.3.6-44.el8_4.1",
+            "namespace": "centos-8",
+            "description": "In ISC DHCP 4.1-ESV-R1 -> 4.1-ESV-R16, ISC DHCP 4.4.0 -> 4.4.2 (Other branches of ISC DHCP (i.e., releases in the 4.0.x series or lower and releases in the 4.3.x series) are beyond their End-of-Life (EOL) and no longer supported by ISC. From inspection it is clear that the defect is also present in releases from those series, but they have not been officially tested for the vulnerability), The outcome of encountering the defect while reading a lease that will trigger it varies, according to: the component being affected (i.e., dhclient or dhcpd) whether the package was built as a 32-bit or 64-bit binary whether the compiler flag -fstack-protection-strong was used when compiling In dhclient, ISC has not successfully reproduced the error on a 64-bit system. However, on a 32-bit system it is possible to cause dhclient to crash when reading an improper lease, which could cause network connectivity problems for an affected system due to the absence of a running DHCP client process. In dhcpd, when run in DHCPv4 or DHCPv6 mode: if the dhcpd server binary was built for a 32-bit architecture AND the -fstack-protection-strong flag was specified to the compiler, dhcpd may exit while parsing a lease file containing an objectionable lease, resulting in lack of service to clients. Additionally, the offending lease and the lease immediately following it in the lease database may be improperly deleted. if the dhcpd server binary was built for a 64-bit architecture OR if the -fstack-protection-strong compiler flag was NOT specified, the crash will not occur, but it is possible for the offending lease and the lease which immediately followed it to be improperly deleted."
+        },
+        {
+            "vulnerability": "CVE-2021-25217",
+            "featurename": "dhcp-libs",
+            "featureversion": "12:4.3.6-41.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-25217",
+            "fixedBy": "12:4.3.6-44.el8_4.1",
+            "namespace": "centos-8",
+            "description": "In ISC DHCP 4.1-ESV-R1 -> 4.1-ESV-R16, ISC DHCP 4.4.0 -> 4.4.2 (Other branches of ISC DHCP (i.e., releases in the 4.0.x series or lower and releases in the 4.3.x series) are beyond their End-of-Life (EOL) and no longer supported by ISC. From inspection it is clear that the defect is also present in releases from those series, but they have not been officially tested for the vulnerability), The outcome of encountering the defect while reading a lease that will trigger it varies, according to: the component being affected (i.e., dhclient or dhcpd) whether the package was built as a 32-bit or 64-bit binary whether the compiler flag -fstack-protection-strong was used when compiling In dhclient, ISC has not successfully reproduced the error on a 64-bit system. However, on a 32-bit system it is possible to cause dhclient to crash when reading an improper lease, which could cause network connectivity problems for an affected system due to the absence of a running DHCP client process. In dhcpd, when run in DHCPv4 or DHCPv6 mode: if the dhcpd server binary was built for a 32-bit architecture AND the -fstack-protection-strong flag was specified to the compiler, dhcpd may exit while parsing a lease file containing an objectionable lease, resulting in lack of service to clients. Additionally, the offending lease and the lease immediately following it in the lease database may be improperly deleted. if the dhcpd server binary was built for a 64-bit architecture OR if the -fstack-protection-strong compiler flag was NOT specified, the crash will not occur, but it is possible for the offending lease and the lease which immediately followed it to be improperly deleted."
+        },
+        {
+            "vulnerability": "CVE-2019-18218",
+            "featurename": "file-libs",
+            "featureversion": "5.33-16.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-18218",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "cdf_read_property_info in cdf.c in file through 5.37 does not restrict the number of CDF_VECTOR elements, which allows a heap-based buffer overflow (4-byte out-of-bounds write)."
+        },
+        {
+            "vulnerability": "CVE-2019-8905",
+            "featurename": "file-libs",
+            "featureversion": "5.33-16.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-8905",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "do_core_note in readelf.c in libmagic.a in file 5.35 has a stack-based buffer over-read, related to file_printable, a different vulnerability than CVE-2018-10360."
+        },
+        {
+            "vulnerability": "CVE-2019-8906",
+            "featurename": "file-libs",
+            "featureversion": "5.33-16.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-8906",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "do_core_note in readelf.c in libmagic.a in file 5.35 has an out-of-bounds read because memcpy is misused."
+        },
+        {
+            "vulnerability": "CVE-2021-27219",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-27219",
+            "fixedBy": "2.56.4-10.el8_4",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in GNOME GLib before 2.66.6 and 2.67.x before 2.67.3. The function g_bytes_new has an integer overflow on 64-bit platforms due to an implicit cast from 64 bits to 32 bits. The overflow could potentially lead to memory corruption."
+        },
+        {
+            "vulnerability": "CVE-2020-13543",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-13543",
+            "fixedBy": "2.56.4-9.el8",
+            "namespace": "centos-8",
+            "description": "A code execution vulnerability exists in the WebSocket functionality of Webkit WebKitGTK 2.30.0. A specially crafted web page can trigger a use-after-free vulnerability which can lead to remote code execution. An attacker can get a user to visit a webpage to trigger this vulnerability."
+        },
+        {
+            "vulnerability": "CVE-2020-13584",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-13584",
+            "fixedBy": "2.56.4-9.el8",
+            "namespace": "centos-8",
+            "description": "An exploitable use-after-free vulnerability exists in WebKitGTK browser version 2.30.1 x64. A specially crafted HTML web page can cause a use-after-free condition, resulting in a remote code execution. The victim needs to visit a malicious web site to trigger this vulnerability."
+        },
+        {
+            "vulnerability": "CVE-2020-9948",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-9948",
+            "fixedBy": "2.56.4-9.el8",
+            "namespace": "centos-8",
+            "description": "A type confusion issue was addressed with improved memory handling. This issue is fixed in Safari 14.0. Processing maliciously crafted web content may lead to arbitrary code execution."
+        },
+        {
+            "vulnerability": "CVE-2020-9951",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-9951",
+            "fixedBy": "2.56.4-9.el8",
+            "namespace": "centos-8",
+            "description": "A use after free issue was addressed with improved memory management. This issue is fixed in Safari 14.0. Processing maliciously crafted web content may lead to arbitrary code execution."
+        },
+        {
+            "vulnerability": "CVE-2020-9983",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-9983",
+            "fixedBy": "2.56.4-9.el8",
+            "namespace": "centos-8",
+            "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in Safari 14.0. Processing maliciously crafted web content may lead to code execution."
+        },
+        {
+            "vulnerability": "CVE-2021-27218",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-27218",
+            "fixedBy": "2.56.4-10.el8_4.1",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in GNOME GLib before 2.66.7 and 2.67.x before 2.67.4. If g_byte_array_new_take() was called with a buffer of 4GB or more on a 64-bit platform, the length would be truncated modulo 2**32, causing unintended length truncation."
+        },
+        {
+            "vulnerability": "CVE-2018-16428",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-16428",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "In GNOME GLib 2.56.1, g_markup_parse_context_end_parse() in gmarkup.c has a NULL pointer dereference."
+        },
+        {
+            "vulnerability": "CVE-2018-16429",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-16429",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "GNOME GLib 2.56.1 has an out-of-bounds read vulnerability in g_markup_parse_context_parse() in gmarkup.c, related to utf8_str()."
+        },
+        {
+            "vulnerability": "CVE-2019-13012",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-13012",
+            "fixedBy": "2.56.4-9.el8",
+            "namespace": "centos-8",
+            "description": "The keyfile settings backend in GNOME GLib (aka glib2.0) before 2.60.0 creates directories using g_file_make_directory_with_parents (kfsb->dir, NULL, NULL) and files using g_file_replace_contents (kfsb->file, contents, length, NULL, FALSE, G_FILE_CREATE_REPLACE_DESTINATION, NULL, NULL, NULL). Consequently, it does not properly restrict directory (and file) permissions. Instead, for directories, 0777 permissions are used; for files, default file permissions are used. This is similar to CVE-2019-12450."
+        },
+        {
+            "vulnerability": "CVE-2021-28153",
+            "featurename": "glib2",
+            "featureversion": "2.56.4-8.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-28153",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in GNOME GLib before 2.66.8. When g_file_replace() is used with G_FILE_CREATE_REPLACE_DESTINATION to replace a path that is a dangling symlink, it incorrectly also creates the target of the symlink as an empty file, which could conceivably have security relevance if the symlink is attacker-controlled. (If the path is a symlink to a file that already exists, then the contents of that file correctly remain unchanged.)"
+        },
+        {
+            "vulnerability": "CVE-2019-1010022",
+            "featurename": "glibc",
+            "featureversion": "2.28-127.el8",
+            "severity": "Critical",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-1010022",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "** DISPUTED ** GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.\""
+        },
+        {
+            "vulnerability": "CVE-2019-25013",
+            "featurename": "glibc",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-25013",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv feature in the GNU C Library (aka glibc or libc6) through 2.32, when processing invalid multi-byte input sequences in the EUC-KR encoding, may have a buffer over-read."
+        },
+        {
+            "vulnerability": "CVE-2019-9169",
+            "featurename": "glibc",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9169",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match."
+        },
+        {
+            "vulnerability": "CVE-2021-3326",
+            "featurename": "glibc",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3326",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid input sequences in the ISO-2022-JP-3 encoding, fails an assertion in the code path and aborts the program, potentially resulting in a denial of service."
+        },
+        {
+            "vulnerability": "CVE-2021-35942",
+            "featurename": "glibc",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35942",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The wordexp function in the GNU C Library (aka glibc) through 2.33 may crash or read arbitrary memory in parse_param (in posix/wordexp.c) when called with an untrusted, crafted pattern, potentially resulting in a denial of service or disclosure of information. This occurs because atoi was used but strtoul should have been used to ensure correct calculations."
+        },
+        {
+            "vulnerability": "CVE-2016-10228",
+            "featurename": "glibc",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2016-10228",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv program in the GNU C Library (aka glibc or libc6) 2.31 and earlier, when invoked with multiple suffixes in the destination encoding (TRANSLATE or IGNORE) along with the -c option, enters an infinite loop when processing invalid multi-byte input sequences, leading to a denial of service."
+        },
+        {
+            "vulnerability": "CVE-2020-27618",
+            "featurename": "glibc",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-27618",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid multi-byte input sequences in IBM1364, IBM1371, IBM1388, IBM1390, and IBM1399 encodings, fails to advance the input state, which could lead to an infinite loop in applications, resulting in a denial of service, a different vulnerability from CVE-2016-10228."
+        },
+        {
+            "vulnerability": "CVE-2021-27645",
+            "featurename": "glibc",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-27645",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The nameserver caching daemon (nscd) in the GNU C Library (aka glibc or libc6) 2.29 through 2.33, when processing a request for netgroup lookup, may crash due to a double-free, potentially resulting in degraded service or Denial of Service on the local system. This is related to netgroupcache.c."
+        },
+        {
+            "vulnerability": "CVE-2021-33574",
+            "featurename": "glibc",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-33574",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The mq_notify function in the GNU C Library (aka glibc) versions 2.32 and 2.33 has a use-after-free. It may use the notification thread attributes object (passed through its struct sigevent parameter) after it has been freed by the caller, leading to a denial of service (application crash) or possibly unspecified other impact."
+        },
+        {
+            "vulnerability": "CVE-2019-1010022",
+            "featurename": "glibc-common",
+            "featureversion": "2.28-127.el8",
+            "severity": "Critical",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-1010022",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "** DISPUTED ** GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.\""
+        },
+        {
+            "vulnerability": "CVE-2019-25013",
+            "featurename": "glibc-common",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-25013",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv feature in the GNU C Library (aka glibc or libc6) through 2.32, when processing invalid multi-byte input sequences in the EUC-KR encoding, may have a buffer over-read."
+        },
+        {
+            "vulnerability": "CVE-2019-9169",
+            "featurename": "glibc-common",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9169",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match."
+        },
+        {
+            "vulnerability": "CVE-2021-3326",
+            "featurename": "glibc-common",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3326",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid input sequences in the ISO-2022-JP-3 encoding, fails an assertion in the code path and aborts the program, potentially resulting in a denial of service."
+        },
+        {
+            "vulnerability": "CVE-2021-35942",
+            "featurename": "glibc-common",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35942",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The wordexp function in the GNU C Library (aka glibc) through 2.33 may crash or read arbitrary memory in parse_param (in posix/wordexp.c) when called with an untrusted, crafted pattern, potentially resulting in a denial of service or disclosure of information. This occurs because atoi was used but strtoul should have been used to ensure correct calculations."
+        },
+        {
+            "vulnerability": "CVE-2016-10228",
+            "featurename": "glibc-common",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2016-10228",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv program in the GNU C Library (aka glibc or libc6) 2.31 and earlier, when invoked with multiple suffixes in the destination encoding (TRANSLATE or IGNORE) along with the -c option, enters an infinite loop when processing invalid multi-byte input sequences, leading to a denial of service."
+        },
+        {
+            "vulnerability": "CVE-2020-27618",
+            "featurename": "glibc-common",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-27618",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid multi-byte input sequences in IBM1364, IBM1371, IBM1388, IBM1390, and IBM1399 encodings, fails to advance the input state, which could lead to an infinite loop in applications, resulting in a denial of service, a different vulnerability from CVE-2016-10228."
+        },
+        {
+            "vulnerability": "CVE-2021-27645",
+            "featurename": "glibc-common",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-27645",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The nameserver caching daemon (nscd) in the GNU C Library (aka glibc or libc6) 2.29 through 2.33, when processing a request for netgroup lookup, may crash due to a double-free, potentially resulting in degraded service or Denial of Service on the local system. This is related to netgroupcache.c."
+        },
+        {
+            "vulnerability": "CVE-2021-33574",
+            "featurename": "glibc-common",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-33574",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The mq_notify function in the GNU C Library (aka glibc) versions 2.32 and 2.33 has a use-after-free. It may use the notification thread attributes object (passed through its struct sigevent parameter) after it has been freed by the caller, leading to a denial of service (application crash) or possibly unspecified other impact."
+        },
+        {
+            "vulnerability": "CVE-2019-1010022",
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-127.el8",
+            "severity": "Critical",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-1010022",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "** DISPUTED ** GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat.\""
+        },
+        {
+            "vulnerability": "CVE-2019-25013",
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-25013",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv feature in the GNU C Library (aka glibc or libc6) through 2.32, when processing invalid multi-byte input sequences in the EUC-KR encoding, may have a buffer over-read."
+        },
+        {
+            "vulnerability": "CVE-2019-9169",
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9169",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match."
+        },
+        {
+            "vulnerability": "CVE-2021-3326",
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3326",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid input sequences in the ISO-2022-JP-3 encoding, fails an assertion in the code path and aborts the program, potentially resulting in a denial of service."
+        },
+        {
+            "vulnerability": "CVE-2021-35942",
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-127.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35942",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The wordexp function in the GNU C Library (aka glibc) through 2.33 may crash or read arbitrary memory in parse_param (in posix/wordexp.c) when called with an untrusted, crafted pattern, potentially resulting in a denial of service or disclosure of information. This occurs because atoi was used but strtoul should have been used to ensure correct calculations."
+        },
+        {
+            "vulnerability": "CVE-2016-10228",
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2016-10228",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv program in the GNU C Library (aka glibc or libc6) 2.31 and earlier, when invoked with multiple suffixes in the destination encoding (TRANSLATE or IGNORE) along with the -c option, enters an infinite loop when processing invalid multi-byte input sequences, leading to a denial of service."
+        },
+        {
+            "vulnerability": "CVE-2020-27618",
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-27618",
+            "fixedBy": "2.28-151.el8",
+            "namespace": "centos-8",
+            "description": "The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid multi-byte input sequences in IBM1364, IBM1371, IBM1388, IBM1390, and IBM1399 encodings, fails to advance the input state, which could lead to an infinite loop in applications, resulting in a denial of service, a different vulnerability from CVE-2016-10228."
+        },
+        {
+            "vulnerability": "CVE-2021-27645",
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-27645",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The nameserver caching daemon (nscd) in the GNU C Library (aka glibc or libc6) 2.29 through 2.33, when processing a request for netgroup lookup, may crash due to a double-free, potentially resulting in degraded service or Denial of Service on the local system. This is related to netgroupcache.c."
+        },
+        {
+            "vulnerability": "CVE-2021-33574",
+            "featurename": "glibc-minimal-langpack",
+            "featureversion": "2.28-127.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-33574",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The mq_notify function in the GNU C Library (aka glibc) versions 2.32 and 2.33 has a use-after-free. It may use the notification thread attributes object (passed through its struct sigevent parameter) after it has been freed by the caller, leading to a denial of service (application crash) or possibly unspecified other impact."
+        },
+        {
+            "vulnerability": "CVE-2021-20305",
+            "featurename": "gnutls",
+            "featureversion": "3.6.14-6.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20305",
+            "fixedBy": "3.6.14-8.el8_3",
+            "namespace": "centos-8",
+            "description": "A flaw was found in Nettle in versions before 3.7.2, where several Nettle signature verification functions (GOST DSA, EDDSA & ECDSA) result in the Elliptic Curve Cryptography point (ECC) multiply function being called with out-of-range scalers, possibly resulting in incorrect results. This flaw allows an attacker to force an invalid signature, causing an assertion failure or possible validation. The highest threat to this vulnerability is to confidentiality, integrity, as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2020-24659",
+            "featurename": "gnutls",
+            "featureversion": "3.6.14-6.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-24659",
+            "fixedBy": "3.6.14-7.el8_3",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in GnuTLS before 3.6.15. A server can trigger a NULL pointer dereference in a TLS 1.3 client if a no_renegotiation alert is sent with unexpected timing, and then an invalid second handshake occurs. The crash happens in the application's error handling path, where the gnutls_deinit function is called after detecting a handshake failure."
+        },
+        {
+            "vulnerability": "CVE-2021-20231",
+            "featurename": "gnutls",
+            "featureversion": "3.6.14-6.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20231",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in gnutls. A use after free issue in client sending key_share extension may lead to memory corruption and other consequences."
+        },
+        {
+            "vulnerability": "CVE-2021-20232",
+            "featurename": "gnutls",
+            "featureversion": "3.6.14-6.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20232",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in gnutls. A use after free issue in client_send_params in lib/ext/pre_shared_key.c may lead to memory corruption and other potential consequences."
+        },
+        {
+            "vulnerability": "CVE-2020-12762",
+            "featurename": "json-c",
+            "featureversion": "0.13.1-0.2.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-12762",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "json-c through 0.14 has an integer overflow and out-of-bounds write via a large JSON file, as demonstrated by printbuf_memappend."
+        },
+        {
+            "vulnerability": "CVE-2021-20269",
+            "featurename": "kexec-tools",
+            "featureversion": "2.0.20-34.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20269",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in the permissions of a log file created by kexec-tools. This flaw allows a local unprivileged user to read this file and leak kernel internal information from a previous panic. The highest threat from this vulnerability is to confidentiality."
+        },
+        {
+            "vulnerability": "CVE-2020-28196",
+            "featurename": "krb5-libs",
+            "featureversion": "1.18.2-5.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-28196",
+            "fixedBy": "1.18.2-8.el8",
+            "namespace": "centos-8",
+            "description": "MIT Kerberos 5 (aka krb5) before 1.17.2 and 1.18.x before 1.18.3 allows unbounded recursion via an ASN.1-encoded Kerberos message because the lib/krb5/asn.1/asn1_encode.c support for BER indefinite lengths lacks a recursion limit."
+        },
+        {
+            "vulnerability": "CVE-2021-36222",
+            "featurename": "krb5-libs",
+            "featureversion": "1.18.2-5.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-36222",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "ec_verify in kdc/kdc_preauth_ec.c in the Key Distribution Center (KDC) in MIT Kerberos 5 (aka krb5) before 1.18.4 and 1.19.x before 1.19.2 allows remote attackers to cause a NULL pointer dereference and daemon crash. This occurs because a return value is not properly managed in a certain situation."
+        },
+        {
+            "vulnerability": "CVE-2017-14502",
+            "featurename": "libarchive",
+            "featureversion": "3.3.2-9.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2017-14502",
+            "fixedBy": "3.3.3-1.el8",
+            "namespace": "centos-8",
+            "description": "read_header in archive_read_support_format_rar.c in libarchive 3.3.2 suffers from an off-by-one error for UTF-16 names in RAR archives, leading to an out-of-bounds read in archive_read_format_rar_read_header."
+        },
+        {
+            "vulnerability": "CVE-2020-21674",
+            "featurename": "libarchive",
+            "featureversion": "3.3.2-9.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-21674",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Heap-based buffer overflow in archive_string_append_from_wcs() (archive_string.c) in libarchive-3.4.1dev allows remote attackers to cause a denial of service (out-of-bounds write in heap memory resulting into a crash) via a crafted archive file. NOTE: this only affects users who downloaded the development code from GitHub. Users of the product's official releases are unaffected."
+        },
+        {
+            "vulnerability": "CVE-2017-14166",
+            "featurename": "libarchive",
+            "featureversion": "3.3.2-9.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2017-14166",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "libarchive 3.3.2 allows remote attackers to cause a denial of service (xml_data heap-based buffer over-read and application crash) via a crafted xar archive, related to the mishandling of empty strings in the atol8 function in archive_read_support_format_xar.c."
+        },
+        {
+            "vulnerability": "CVE-2017-14501",
+            "featurename": "libarchive",
+            "featureversion": "3.3.2-9.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2017-14501",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An out-of-bounds read flaw exists in parse_file_info in archive_read_support_format_iso9660.c in libarchive 3.3.2 when extracting a specially crafted iso9660 iso file, related to archive_read_format_iso9660_read_header."
+        },
+        {
+            "vulnerability": "CVE-2018-1000879",
+            "featurename": "libarchive",
+            "featureversion": "3.3.2-9.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-1000879",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "libarchive version commit 379867ecb330b3a952fb7bfa7bffb7bbd5547205 onwards (release v3.3.0 onwards) contains a CWE-476: NULL Pointer Dereference vulnerability in ACL parser - libarchive/archive_acl.c, archive_acl_from_text_l() that can result in Crash/DoS. This attack appear to be exploitable via the victim must open a specially crafted archive file."
+        },
+        {
+            "vulnerability": "CVE-2018-1000880",
+            "featurename": "libarchive",
+            "featureversion": "3.3.2-9.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-1000880",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "libarchive version commit 9693801580c0cf7c70e862d305270a16b52826a7 onwards (release v3.2.0 onwards) contains a CWE-20: Improper Input Validation vulnerability in WARC parser - libarchive/archive_read_support_format_warc.c, _warc_read() that can result in DoS - quasi-infinite run time and disk usage from tiny file. This attack appear to be exploitable via the victim must open a specially crafted WARC file."
+        },
+        {
+            "vulnerability": "CVE-2021-37600",
+            "featurename": "libblkid",
+            "featureversion": "2.32.1-24.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-37600",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An integer overflow in util-linux through 2.37.1 can potentially cause a buffer overflow if an attacker were able to use system resources in a way that leads to a large number in the /proc/sysvipc/sem file."
+        },
+        {
+            "vulnerability": "CVE-2020-8284",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-8284",
+            "fixedBy": "7.61.1-18.el8",
+            "namespace": "centos-8",
+            "description": "A malicious server can use the FTP PASV response to trick curl 7.73.0 and earlier into connecting back to a given IP address and port, and this way potentially make curl extract information about services that are otherwise private and not disclosed, for example doing port scanning and service banner extractions."
+        },
+        {
+            "vulnerability": "CVE-2020-8285",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-8285",
+            "fixedBy": "7.61.1-18.el8",
+            "namespace": "centos-8",
+            "description": "curl 7.21.0 to and including 7.73.0 is vulnerable to uncontrolled recursion due to a stack overflow issue in FTP wildcard match parsing."
+        },
+        {
+            "vulnerability": "CVE-2020-8286",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-8286",
+            "fixedBy": "7.61.1-18.el8",
+            "namespace": "centos-8",
+            "description": "curl 7.41.0 through 7.73.0 is vulnerable to an improper check for certificate revocation due to insufficient verification of the OCSP response."
+        },
+        {
+            "vulnerability": "CVE-2021-22876",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22876",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "curl 7.1.1 to and including 7.75.0 is vulnerable to an \"Exposure of Private Personal Information to an Unauthorized Actor\" by leaking credentials in the HTTP Referer: header. libcurl does not strip off user credentials from the URL when automatically populating the Referer: HTTP request header field in outgoing HTTP requests, and therefore risks leaking sensitive data to the server that is the target of the second HTTP request."
+        },
+        {
+            "vulnerability": "CVE-2021-22922",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22922",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "When curl is instructed to download content using the metalink feature, thecontents is verified against a hash provided in the metalink XML file.The metalink XML file points out to the client how to get the same contentfrom a set of different URLs, potentially hosted by different servers and theclient can then download the file from one or several of them. In a serial orparallel manner.If one of the servers hosting the contents has been breached and the contentsof the specific file on that server is replaced with a modified payload, curlshould detect this when the hash of the file mismatches after a completeddownload. It should remove the contents and instead try getting the contentsfrom another URL. This is not done, and instead such a hash mismatch is onlymentioned in text and the potentially malicious content is kept in the file ondisk."
+        },
+        {
+            "vulnerability": "CVE-2021-22923",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22923",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "When curl is instructed to get content using the metalink feature, and a user name and password are used to download the metalink XML file, those same credentials are then subsequently passed on to each of the servers from which curl will download or try to download the contents from. Often contrary to the user's expectations and intentions and without telling the user it happened."
+        },
+        {
+            "vulnerability": "CVE-2021-22924",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22924",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse, if one of them matches the setup.Due to errors in the logic, the config matching function did not take 'issuercert' into account and it compared the involved paths *case insensitively*,which could lead to libcurl reusing wrong connections.File paths are, or can be, case sensitive on many systems but not all, and caneven vary depending on used file systems.The comparison also didn't include the 'issuer cert' which a transfer can setto qualify how to verify the server certificate."
+        },
+        {
+            "vulnerability": "CVE-2020-8231",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-8231",
+            "fixedBy": "7.61.1-18.el8",
+            "namespace": "centos-8",
+            "description": "Due to use of a dangling pointer, libcurl 7.29.0 through 7.71.1 can use the wrong connection when sending data."
+        },
+        {
+            "vulnerability": "CVE-2021-22898",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22898",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "curl 7.7 through 7.76.1 suffers from an information disclosure when the `-t` command line option, known as `CURLOPT_TELNETOPTIONS` in libcurl, is used to send variable=content pairs to TELNET servers. Due to a flaw in the option parser for sending NEW_ENV variables, libcurl could be made to pass on uninitialized data from a stack based buffer to the server, resulting in potentially revealing sensitive internal information to the server using a clear-text network protocol."
+        },
+        {
+            "vulnerability": "CVE-2021-22925",
+            "featurename": "libcurl-minimal",
+            "featureversion": "7.61.1-14.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-22925",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "curl supports the `-t` command line option, known as `CURLOPT_TELNETOPTIONS`in libcurl. This rarely used option is used to send variable=content pairs toTELNET servers.Due to flaw in the option parser for sending `NEW_ENV` variables, libcurlcould be made to pass on uninitialized data from a stack based buffer to theserver. Therefore potentially revealing sensitive internal information to theserver using a clear-text network protocol.This could happen because curl did not call and use sscanf() correctly whenparsing the string provided by the application."
+        },
+        {
+            "vulnerability": "CVE-2019-2708",
+            "featurename": "libdb",
+            "featureversion": "5.3.28-39.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-2708",
+            "fixedBy": "5.3.28-40.el8",
+            "namespace": "centos-8",
+            "description": "Vulnerability in the Data Store component of Oracle Berkeley DB. Supported versions that are affected are Prior to 6.138, prior to 6.2.38 and prior to 18.1.32. Easily exploitable vulnerability allows low privileged attacker having Local Logon privilege with logon to the infrastructure where Data Store executes to compromise Data Store. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Data Store. CVSS 3.0 Base Score 3.3 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L)."
+        },
+        {
+            "vulnerability": "CVE-2019-2708",
+            "featurename": "libdb-utils",
+            "featureversion": "5.3.28-39.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-2708",
+            "fixedBy": "5.3.28-40.el8",
+            "namespace": "centos-8",
+            "description": "Vulnerability in the Data Store component of Oracle Berkeley DB. Supported versions that are affected are Prior to 6.138, prior to 6.2.38 and prior to 18.1.32. Easily exploitable vulnerability allows low privileged attacker having Local Logon privilege with logon to the infrastructure where Data Store executes to compromise Data Store. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Data Store. CVSS 3.0 Base Score 3.3 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L)."
+        },
+        {
+            "vulnerability": "CVE-2021-3445",
+            "featurename": "libdnf",
+            "featureversion": "0.48.0-5.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3445",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in libdnf's signature verification functionality in versions before 0.60.1. This flaw allows an attacker to achieve code execution if they can alter the header information of an RPM package and then trick a user or system into installing it. The highest risk of this vulnerability is to confidentiality, integrity, as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-37600",
+            "featurename": "libfdisk",
+            "featureversion": "2.32.1-24.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-37600",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An integer overflow in util-linux through 2.37.1 can potentially cause a buffer overflow if an attacker were able to use system resources in a way that leads to a large number in the /proc/sysvipc/sem file."
+        },
+        {
+            "vulnerability": "CVE-2018-20673",
+            "featurename": "libgcc",
+            "featureversion": "8.3.1-5.1.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20673",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, contains an integer overflow vulnerability (for \"Create an array for saving the template argument values\") that can trigger a heap-based buffer overflow, as demonstrated by nm."
+        },
+        {
+            "vulnerability": "CVE-2018-20657",
+            "featurename": "libgcc",
+            "featureversion": "8.3.1-5.1.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20657",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698."
+        },
+        {
+            "vulnerability": "CVE-2019-14250",
+            "featurename": "libgcc",
+            "featureversion": "8.3.1-5.1.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-14250",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. simple_object_elf_match in simple-object-elf.c does not check for a zero shstrndx value, leading to an integer overflow and resultant heap-based buffer overflow."
+        },
+        {
+            "vulnerability": "CVE-2019-12904",
+            "featurename": "libgcrypt",
+            "featureversion": "1.8.5-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-12904",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "** DISPUTED ** In Libgcrypt 1.8.4, the C implementation of AES is vulnerable to a flush-and-reload side-channel attack because physical addresses are available to other processes. (The C implementation is used on platforms where an assembly-language implementation is unavailable.) NOTE: the vendor's position is that the issue report cannot be validated because there is no description of an attack."
+        },
+        {
+            "vulnerability": "CVE-2021-33560",
+            "featurename": "libgcrypt",
+            "featureversion": "1.8.5-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-33560",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. (There is also an interoperability problem because the selection of the k integer value does not properly consider the differences between basic ElGamal encryption and generalized ElGamal encryption.) This, for example, affects use of ElGamal in OpenPGP."
+        },
+        {
+            "vulnerability": "CVE-2021-37600",
+            "featurename": "libmount",
+            "featureversion": "2.32.1-24.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-37600",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An integer overflow in util-linux through 2.37.1 can potentially cause a buffer overflow if an attacker were able to use system resources in a way that leads to a large number in the /proc/sysvipc/sem file."
+        },
+        {
+            "vulnerability": "CVE-2021-36084",
+            "featurename": "libsepol",
+            "featureversion": "2.9-1.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-36084",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The CIL compiler in SELinux 3.2 has a use-after-free in __cil_verify_classperms (called from __cil_verify_classpermission and __cil_pre_verify_helper)."
+        },
+        {
+            "vulnerability": "CVE-2021-36085",
+            "featurename": "libsepol",
+            "featureversion": "2.9-1.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-36085",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The CIL compiler in SELinux 3.2 has a use-after-free in __cil_verify_classperms (called from __verify_map_perm_classperms and hashtab_map)."
+        },
+        {
+            "vulnerability": "CVE-2021-36086",
+            "featurename": "libsepol",
+            "featureversion": "2.9-1.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-36086",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The CIL compiler in SELinux 3.2 has a use-after-free in cil_reset_classpermission (called from cil_reset_classperms_set and cil_reset_classperms_list)."
+        },
+        {
+            "vulnerability": "CVE-2021-36087",
+            "featurename": "libsepol",
+            "featureversion": "2.9-1.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-36087",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The CIL compiler in SELinux 3.2 has a heap-based buffer over-read in ebitmap_match_any (called indirectly from cil_check_neverallow). This occurs because there is sometimes a lack of checks for invalid statements in an optional block."
+        },
+        {
+            "vulnerability": "CVE-2021-37600",
+            "featurename": "libsmartcols",
+            "featureversion": "2.32.1-24.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-37600",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An integer overflow in util-linux through 2.37.1 can potentially cause a buffer overflow if an attacker were able to use system resources in a way that leads to a large number in the /proc/sysvipc/sem file."
+        },
+        {
+            "vulnerability": "CVE-2021-3200",
+            "featurename": "libsolv",
+            "featureversion": "0.7.11-1.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3200",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Buffer overflow vulnerability in libsolv 2020-12-13 via the Solver * testcase_read(Pool *pool, FILE *fp, const char *testcase, Queue *job, char **resultp, int *resultflagsp function at src/testcase.c: line 2334, which could cause a denial of service"
+        },
+        {
+            "vulnerability": "CVE-2018-20673",
+            "featurename": "libstdc++",
+            "featureversion": "8.3.1-5.1.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20673",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, contains an integer overflow vulnerability (for \"Create an array for saving the template argument values\") that can trigger a heap-based buffer overflow, as demonstrated by nm."
+        },
+        {
+            "vulnerability": "CVE-2018-20657",
+            "featurename": "libstdc++",
+            "featureversion": "8.3.1-5.1.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20657",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The demangle_template function in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.31.1, has a memory leak via a crafted string, leading to a denial of service (memory consumption), as demonstrated by cxxfilt, a related issue to CVE-2018-12698."
+        },
+        {
+            "vulnerability": "CVE-2019-14250",
+            "featurename": "libstdc++",
+            "featureversion": "8.3.1-5.1.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-14250",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. simple_object_elf_match in simple-object-elf.c does not check for a zero shstrndx value, leading to an integer overflow and resultant heap-based buffer overflow."
+        },
+        {
+            "vulnerability": "CVE-2018-1000654",
+            "featurename": "libtasn1",
+            "featureversion": "4.13-3.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-1000654",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "GNU Libtasn1-4.13 libtasn1-4.13 version libtasn1-4.13, libtasn1-4.12 contains a DoS, specifically CPU usage will reach 100% when running asn1Paser against the POC due to an issue in _asn1_expand_object_id(p_tree), after a long time, the program will be killed. This attack appears to be exploitable via parsing a crafted file."
+        },
+        {
+            "vulnerability": "CVE-2021-37600",
+            "featurename": "libuuid",
+            "featureversion": "2.32.1-24.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-37600",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An integer overflow in util-linux through 2.37.1 can potentially cause a buffer overflow if an attacker were able to use system resources in a way that leads to a large number in the /proc/sysvipc/sem file."
+        },
+        {
+            "vulnerability": "CVE-2020-24977",
+            "featurename": "libxml2",
+            "featureversion": "2.9.7-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-24977",
+            "fixedBy": "2.9.7-9.el8",
+            "namespace": "centos-8",
+            "description": "GNOME project libxml2 v2.9.10 has a global buffer over-read vulnerability in xmlEncodeEntitiesInternal at libxml2/entities.c. The issue has been fixed in commit 50f06b3e."
+        },
+        {
+            "vulnerability": "CVE-2021-3516",
+            "featurename": "libxml2",
+            "featureversion": "2.9.7-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3516",
+            "fixedBy": "2.9.7-9.el8_4.2",
+            "namespace": "centos-8",
+            "description": "There's a flaw in libxml2's xmllint in versions before 2.9.11. An attacker who is able to submit a crafted file to be processed by xmllint could trigger a use-after-free. The greatest impact of this flaw is to confidentiality, integrity, and availability."
+        },
+        {
+            "vulnerability": "CVE-2021-3517",
+            "featurename": "libxml2",
+            "featureversion": "2.9.7-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3517",
+            "fixedBy": "2.9.7-9.el8_4.2",
+            "namespace": "centos-8",
+            "description": "There is a flaw in the xml entity encoding functionality of libxml2 in versions before 2.9.11. An attacker who is able to supply a crafted file to be processed by an application linked with the affected functionality of libxml2 could trigger an out-of-bounds read. The most likely impact of this flaw is to application availability, with some potential impact to confidentiality and integrity if an attacker is able to use memory information to further exploit the application."
+        },
+        {
+            "vulnerability": "CVE-2021-3518",
+            "featurename": "libxml2",
+            "featureversion": "2.9.7-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3518",
+            "fixedBy": "2.9.7-9.el8_4.2",
+            "namespace": "centos-8",
+            "description": "There's a flaw in libxml2 in versions before 2.9.11. An attacker who is able to submit a crafted file to be processed by an application linked with libxml2 could trigger a use-after-free. The greatest impact from this flaw is to confidentiality, integrity, and availability."
+        },
+        {
+            "vulnerability": "CVE-2021-3537",
+            "featurename": "libxml2",
+            "featureversion": "2.9.7-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3537",
+            "fixedBy": "2.9.7-9.el8_4.2",
+            "namespace": "centos-8",
+            "description": "A vulnerability found in libxml2 in versions before 2.9.11 shows that it did not propagate errors while parsing XML mixed content, causing a NULL dereference. If an untrusted XML document was parsed in recovery mode and post-validated, the flaw could be used to crash the application. The highest threat from this vulnerability is to system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-3541",
+            "featurename": "libxml2",
+            "featureversion": "2.9.7-8.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3541",
+            "fixedBy": "2.9.7-9.el8_4.2",
+            "namespace": "centos-8",
+            "description": "A flaw was found in libxml2. Exponential entity expansion attack its possible bypassing all existing protection mechanisms and leading to denial of service."
+        },
+        {
+            "vulnerability": "CVE-2021-24032",
+            "featurename": "libzstd",
+            "featureversion": "1.4.4-1.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-24032",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Beginning in v1.4.1 and prior to v1.4.9, due to an incomplete fix for CVE-2021-24031, the Zstandard command-line utility created output files with default permissions and restricted those permissions immediately afterwards. Output files could therefore momentarily be readable or writable to unintended parties."
+        },
+        {
+            "vulnerability": "CVE-2020-24370",
+            "featurename": "lua-libs",
+            "featureversion": "5.3.4-11.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-24370",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "ldebug.c in Lua 5.4.0 allows a negation overflow and segmentation fault in getlocal and setlocal, as demonstrated by getlocal(3,2^31)."
+        },
+        {
+            "vulnerability": "CVE-2019-17543",
+            "featurename": "lz4-libs",
+            "featureversion": "1.8.3-2.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-17543",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "LZ4 before 1.9.2 has a heap-based buffer overflow in LZ4_write32 (related to LZ4_compress_destSize), affecting applications that call LZ4_compress_fast with a large input. (This issue can also lead to data corruption.) NOTE: the vendor states \"only a few specific / uncommon usages of the API are at risk.\""
+        },
+        {
+            "vulnerability": "CVE-2021-3520",
+            "featurename": "lz4-libs",
+            "featureversion": "1.8.3-2.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3520",
+            "fixedBy": "1.8.3-3.el8_4",
+            "namespace": "centos-8",
+            "description": "There's a flaw in lz4. An attacker who submits a crafted file to an application linked with lz4 may be able to trigger an integer overflow, leading to calling of memmove() on a negative size argument, causing an out-of-bounds write and/or a crash. The greatest impact of this flaw is to availability, with some potential impact to confidentiality and integrity as well."
+        },
+        {
+            "vulnerability": "CVE-2019-17594",
+            "featurename": "ncurses-base",
+            "featureversion": "6.1-7.20180224.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-17594",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012."
+        },
+        {
+            "vulnerability": "CVE-2019-17595",
+            "featurename": "ncurses-base",
+            "featureversion": "6.1-7.20180224.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-17595",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012."
+        },
+        {
+            "vulnerability": "CVE-2018-19211",
+            "featurename": "ncurses-base",
+            "featureversion": "6.1-7.20180224.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-19211",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "In ncurses 6.1, there is a NULL pointer dereference at function _nc_parse_entry in parse_entry.c that will lead to a denial of service attack. The product proceeds to the dereference code path even after a \"dubious character `*' in name or alias field\" detection."
+        },
+        {
+            "vulnerability": "CVE-2018-19217",
+            "featurename": "ncurses-base",
+            "featureversion": "6.1-7.20180224.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-19217",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "** DISPUTED ** In ncurses, possibly a 6.x version, there is a NULL pointer dereference at the function _nc_name_match that will lead to a denial of service attack. NOTE: the original report stated version 6.1, but the issue did not reproduce for that version according to the maintainer or a reliable third-party."
+        },
+        {
+            "vulnerability": "CVE-2019-17594",
+            "featurename": "ncurses-libs",
+            "featureversion": "6.1-7.20180224.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-17594",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012."
+        },
+        {
+            "vulnerability": "CVE-2019-17595",
+            "featurename": "ncurses-libs",
+            "featureversion": "6.1-7.20180224.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-17595",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012."
+        },
+        {
+            "vulnerability": "CVE-2018-19211",
+            "featurename": "ncurses-libs",
+            "featureversion": "6.1-7.20180224.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-19211",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "In ncurses 6.1, there is a NULL pointer dereference at function _nc_parse_entry in parse_entry.c that will lead to a denial of service attack. The product proceeds to the dereference code path even after a \"dubious character `*' in name or alias field\" detection."
+        },
+        {
+            "vulnerability": "CVE-2018-19217",
+            "featurename": "ncurses-libs",
+            "featureversion": "6.1-7.20180224.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-19217",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "** DISPUTED ** In ncurses, possibly a 6.x version, there is a NULL pointer dereference at the function _nc_name_match that will lead to a denial of service attack. NOTE: the original report stated version 6.1, but the issue did not reproduce for that version according to the maintainer or a reliable third-party."
+        },
+        {
+            "vulnerability": "CVE-2021-20305",
+            "featurename": "nettle",
+            "featureversion": "3.4.1-2.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20305",
+            "fixedBy": "3.4.1-4.el8_3",
+            "namespace": "centos-8",
+            "description": "A flaw was found in Nettle in versions before 3.7.2, where several Nettle signature verification functions (GOST DSA, EDDSA & ECDSA) result in the Elliptic Curve Cryptography point (ECC) multiply function being called with out-of-range scalers, possibly resulting in incorrect results. This flaw allows an attacker to force an invalid signature, causing an assertion failure or possible validation. The highest threat to this vulnerability is to confidentiality, integrity, as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-3580",
+            "featurename": "nettle",
+            "featureversion": "3.4.1-2.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3580",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in the way nettle's RSA decryption functions handled specially crafted ciphertext. An attacker could use this flaw to provide a manipulated ciphertext leading to application crash and denial of service."
+        },
+        {
+            "vulnerability": "CVE-2020-1971",
+            "featurename": "openssl-libs",
+            "featureversion": "1:1.1.1g-11.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-1971",
+            "fixedBy": "1:1.1.1g-12.el8_3",
+            "namespace": "centos-8",
+            "description": "The X.509 GeneralName type is a generic type for representing different types of names. One of those name types is known as EDIPartyName. OpenSSL provides a function GENERAL_NAME_cmp which compares different instances of a GENERAL_NAME to see if they are equal or not. This function behaves incorrectly when both GENERAL_NAMEs contain an EDIPARTYNAME. A NULL pointer dereference and a crash may occur leading to a possible denial of service attack. OpenSSL itself uses the GENERAL_NAME_cmp function for two purposes: 1) Comparing CRL distribution point names between an available CRL and a CRL distribution point embedded in an X509 certificate 2) When verifying that a timestamp response token signer matches the timestamp authority name (exposed via the API functions TS_RESP_verify_response and TS_RESP_verify_token) If an attacker can control both items being compared then that attacker could trigger a crash. For example if the attacker can trick a client or server into checking a malicious certificate against a malicious CRL then this may occur. Note that some applications automatically download CRLs based on a URL embedded in a certificate. This checking happens prior to the signatures on the certificate and CRL being verified. OpenSSL's s_server, s_client and verify tools have support for the \"-crl_download\" option which implements automatic CRL downloading and this attack has been demonstrated to work against those tools. Note that an unrelated bug means that affected versions of OpenSSL cannot parse or construct correct encodings of EDIPARTYNAME. However it is possible to construct a malformed EDIPARTYNAME that OpenSSL's parser will accept and hence trigger this attack. All OpenSSL 1.1.1 and 1.0.2 versions are affected by this issue. Other OpenSSL releases are out of support and have not been checked. Fixed in OpenSSL 1.1.1i (Affected 1.1.1-1.1.1h). Fixed in OpenSSL 1.0.2x (Affected 1.0.2-1.0.2w)."
+        },
+        {
+            "vulnerability": "CVE-2021-3449",
+            "featurename": "openssl-libs",
+            "featureversion": "1:1.1.1g-11.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3449",
+            "fixedBy": "1:1.1.1g-15.el8_3",
+            "namespace": "centos-8",
+            "description": "An OpenSSL TLS server may crash if sent a maliciously crafted renegotiation ClientHello message from a client. If a TLSv1.2 renegotiation ClientHello omits the signature_algorithms extension (where it was present in the initial ClientHello), but includes a signature_algorithms_cert extension then a NULL pointer dereference will result, leading to a crash and a denial of service attack. A server is only vulnerable if it has TLSv1.2 and renegotiation enabled (which is the default configuration). OpenSSL TLS clients are not impacted by this issue. All OpenSSL 1.1.1 versions are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1-1.1.1j)."
+        },
+        {
+            "vulnerability": "CVE-2021-3450",
+            "featurename": "openssl-libs",
+            "featureversion": "1:1.1.1g-11.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3450",
+            "fixedBy": "1:1.1.1g-15.el8_3",
+            "namespace": "centos-8",
+            "description": "The X509_V_FLAG_X509_STRICT flag enables additional security checks of the certificates present in a certificate chain. It is not set by default. Starting from OpenSSL version 1.1.1h a check to disallow certificates in the chain that have explicitly encoded elliptic curve parameters was added as an additional strict check. An error in the implementation of this check meant that the result of a previous check to confirm that certificates in the chain are valid CA certificates was overwritten. This effectively bypasses the check that non-CA certificates must not be able to issue other certificates. If a \"purpose\" has been configured then there is a subsequent opportunity for checks that the certificate is a valid CA. All of the named \"purpose\" values implemented in libcrypto perform this check. Therefore, where a purpose is set the certificate chain will still be rejected even when the strict flag has been used. A purpose is set by default in libssl client and server certificate verification routines, but it can be overridden or removed by an application. In order to be affected, an application must explicitly set the X509_V_FLAG_X509_STRICT verification flag and either not set a purpose for the certificate verification or, in the case of TLS client or server applications, override the default purpose. OpenSSL versions 1.1.1h and newer are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1h-1.1.1j)."
+        },
+        {
+            "vulnerability": "CVE-2021-23840",
+            "featurename": "openssl-libs",
+            "featureversion": "1:1.1.1g-11.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-23840",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Calls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate may overflow the output length argument in some cases where the input length is close to the maximum permissable length for an integer on the platform. In such cases the return value from the function call will be 1 (indicating success), but the output length value will be negative. This could cause applications to behave incorrectly or crash. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x)."
+        },
+        {
+            "vulnerability": "CVE-2021-23841",
+            "featurename": "openssl-libs",
+            "featureversion": "1:1.1.1g-11.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-23841",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "The OpenSSL public API function X509_issuer_and_serial_hash() attempts to create a unique hash value based on the issuer and serial number data contained within an X509 certificate. However it fails to correctly handle any errors that may occur while parsing the issuer field (which might occur if the issuer field is maliciously constructed). This may subsequently result in a NULL pointer deref and a crash leading to a potential denial of service attack. The function X509_issuer_and_serial_hash() is never directly called by OpenSSL itself so applications are only vulnerable if they use this function directly and they use it on certificates that may have been obtained from untrusted sources. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x)."
+        },
+        {
+            "vulnerability": "CVE-2020-29361",
+            "featurename": "p11-kit",
+            "featureversion": "0.23.14-5.el8_0",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-29361",
+            "fixedBy": "0.23.22-1.el8",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in p11-kit 0.21.1 through 0.23.21. Multiple integer overflows have been discovered in the array allocations in the p11-kit library and the p11-kit list command, where overflow checks are missing before calling realloc or calloc."
+        },
+        {
+            "vulnerability": "CVE-2020-29362",
+            "featurename": "p11-kit",
+            "featureversion": "0.23.14-5.el8_0",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-29362",
+            "fixedBy": "0.23.22-1.el8",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in p11-kit 0.21.1 through 0.23.21. A heap-based buffer over-read has been discovered in the RPC protocol used by thep11-kit server/remote commands and the client library. When the remote entity supplies a byte array through a serialized PKCS#11 function call, the receiving entity may allow the reading of up to 4 bytes of memory past the heap allocation."
+        },
+        {
+            "vulnerability": "CVE-2020-29363",
+            "featurename": "p11-kit",
+            "featureversion": "0.23.14-5.el8_0",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-29363",
+            "fixedBy": "0.23.22-1.el8",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in p11-kit 0.23.6 through 0.23.21. A heap-based buffer overflow has been discovered in the RPC protocol used by p11-kit server/remote commands and the client library. When the remote entity supplies a serialized byte array in a CK_ATTRIBUTE, the receiving entity may not allocate sufficient length for the buffer to store the deserialized value."
+        },
+        {
+            "vulnerability": "CVE-2020-29361",
+            "featurename": "p11-kit-trust",
+            "featureversion": "0.23.14-5.el8_0",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-29361",
+            "fixedBy": "0.23.22-1.el8",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in p11-kit 0.21.1 through 0.23.21. Multiple integer overflows have been discovered in the array allocations in the p11-kit library and the p11-kit list command, where overflow checks are missing before calling realloc or calloc."
+        },
+        {
+            "vulnerability": "CVE-2020-29362",
+            "featurename": "p11-kit-trust",
+            "featureversion": "0.23.14-5.el8_0",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-29362",
+            "fixedBy": "0.23.22-1.el8",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in p11-kit 0.21.1 through 0.23.21. A heap-based buffer over-read has been discovered in the RPC protocol used by thep11-kit server/remote commands and the client library. When the remote entity supplies a byte array through a serialized PKCS#11 function call, the receiving entity may allow the reading of up to 4 bytes of memory past the heap allocation."
+        },
+        {
+            "vulnerability": "CVE-2020-29363",
+            "featurename": "p11-kit-trust",
+            "featureversion": "0.23.14-5.el8_0",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-29363",
+            "fixedBy": "0.23.22-1.el8",
+            "namespace": "centos-8",
+            "description": "An issue was discovered in p11-kit 0.23.6 through 0.23.21. A heap-based buffer overflow has been discovered in the RPC protocol used by p11-kit server/remote commands and the client library. When the remote entity supplies a serialized byte array in a CK_ATTRIBUTE, the receiving entity may not allocate sufficient length for the buffer to store the deserialized value."
+        },
+        {
+            "vulnerability": "CVE-2019-20838",
+            "featurename": "pcre",
+            "featureversion": "8.42-4.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-20838",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "libpcre in PCRE before 8.43 allows a subject buffer over-read in JIT when UTF is disabled, and \\X or \\R has more than one fixed quantifier, a related issue to CVE-2019-20454."
+        },
+        {
+            "vulnerability": "CVE-2020-14155",
+            "featurename": "pcre",
+            "featureversion": "8.42-4.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-14155",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "libpcre in PCRE before 8.44 allows an integer overflow via a large number after a (?C substring."
+        },
+        {
+            "vulnerability": "CVE-2020-26116",
+            "featurename": "platform-python",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-26116",
+            "fixedBy": "3.6.8-37.el8",
+            "namespace": "centos-8",
+            "description": "http.client in Python 3.x before 3.5.10, 3.6.x before 3.6.12, 3.7.x before 3.7.9, and 3.8.x before 3.8.5 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of HTTPConnection.request."
+        },
+        {
+            "vulnerability": "CVE-2020-27619",
+            "featurename": "platform-python",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-27619",
+            "fixedBy": "3.6.8-37.el8",
+            "namespace": "centos-8",
+            "description": "In Python 3 through 3.9.0, the Lib/test/multibytecodec_support.py CJK codec tests call eval() on content retrieved via HTTP."
+        },
+        {
+            "vulnerability": "CVE-2021-23336",
+            "featurename": "platform-python",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-23336",
+            "fixedBy": "3.6.8-37.el8",
+            "namespace": "centos-8",
+            "description": "The package python/cpython from 0 and before 3.6.13, from 3.7.0 and before 3.7.10, from 3.8.0 and before 3.8.8, from 3.9.0 and before 3.9.2 are vulnerable to Web Cache Poisoning via urllib.parse.parse_qsl and urllib.parse.parse_qs by using a vector called parameter cloaking. When the attacker can separate query parameters using a semicolon (;), they can cause a difference in the interpretation of the request between the proxy (running with default configuration) and the server. This can result in malicious requests being cached as completely safe ones, as the proxy would usually not see the semicolon as a separator, and therefore would not include it in a cache key of an unkeyed parameter."
+        },
+        {
+            "vulnerability": "CVE-2021-3177",
+            "featurename": "platform-python",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3177",
+            "fixedBy": "3.6.8-37.el8",
+            "namespace": "centos-8",
+            "description": "Python 3.x through 3.9.1 has a buffer overflow in PyCArg_repr in _ctypes/callproc.c, which may lead to remote code execution in certain Python applications that accept floating-point numbers as untrusted input, as demonstrated by a 1e300 argument to c_double.from_param. This occurs because sprintf is used unsafely."
+        },
+        {
+            "vulnerability": "CVE-2021-3426",
+            "featurename": "platform-python",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3426",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There's a flaw in Python 3's pydoc. A local or adjacent attacker who discovers or is able to convince another local or adjacent user to start a pydoc server could access the server and use it to disclose sensitive information belonging to the other user that they would not normally be able to access. The highest risk of this flaw is to data confidentiality. This flaw affects Python versions before 3.8.9, Python versions before 3.9.3 and Python versions before 3.10.0a7."
+        },
+        {
+            "vulnerability": "CVE-2019-9674",
+            "featurename": "platform-python",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9674",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Lib/zipfile.py in Python through 3.7.2 allows remote attackers to cause a denial of service (resource consumption) via a ZIP bomb."
+        },
+        {
+            "vulnerability": "CVE-2018-1121",
+            "featurename": "procps-ng",
+            "featureversion": "3.3.15-3.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-1121",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "procps-ng, procps is vulnerable to a process hiding through race condition. Since the kernel's proc_pid_readdir() returns PID entries in ascending numeric order, a process occupying a high PID can use inotify events to determine when the process list is being scanned, and fork/exec to obtain a lower PID, thus avoiding enumeration. An unprivileged attacker can hide a process from procps-ng's utilities by exploiting a race condition in reading /proc/PID entries. This vulnerability affects procps and procps-ng up to version 3.3.15, newer versions might be affected also."
+        },
+        {
+            "vulnerability": "CVE-2021-3445",
+            "featurename": "python3-hawkey",
+            "featureversion": "0.48.0-5.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3445",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in libdnf's signature verification functionality in versions before 0.60.1. This flaw allows an attacker to achieve code execution if they can alter the header information of an RPM package and then trick a user or system into installing it. The highest risk of this vulnerability is to confidentiality, integrity, as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-3445",
+            "featurename": "python3-libdnf",
+            "featureversion": "0.48.0-5.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3445",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in libdnf's signature verification functionality in versions before 0.60.1. This flaw allows an attacker to achieve code execution if they can alter the header information of an RPM package and then trick a user or system into installing it. The highest risk of this vulnerability is to confidentiality, integrity, as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2020-26116",
+            "featurename": "python3-libs",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-26116",
+            "fixedBy": "3.6.8-37.el8",
+            "namespace": "centos-8",
+            "description": "http.client in Python 3.x before 3.5.10, 3.6.x before 3.6.12, 3.7.x before 3.7.9, and 3.8.x before 3.8.5 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of HTTPConnection.request."
+        },
+        {
+            "vulnerability": "CVE-2020-27619",
+            "featurename": "python3-libs",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-27619",
+            "fixedBy": "3.6.8-37.el8",
+            "namespace": "centos-8",
+            "description": "In Python 3 through 3.9.0, the Lib/test/multibytecodec_support.py CJK codec tests call eval() on content retrieved via HTTP."
+        },
+        {
+            "vulnerability": "CVE-2021-23336",
+            "featurename": "python3-libs",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-23336",
+            "fixedBy": "3.6.8-37.el8",
+            "namespace": "centos-8",
+            "description": "The package python/cpython from 0 and before 3.6.13, from 3.7.0 and before 3.7.10, from 3.8.0 and before 3.8.8, from 3.9.0 and before 3.9.2 are vulnerable to Web Cache Poisoning via urllib.parse.parse_qsl and urllib.parse.parse_qs by using a vector called parameter cloaking. When the attacker can separate query parameters using a semicolon (;), they can cause a difference in the interpretation of the request between the proxy (running with default configuration) and the server. This can result in malicious requests being cached as completely safe ones, as the proxy would usually not see the semicolon as a separator, and therefore would not include it in a cache key of an unkeyed parameter."
+        },
+        {
+            "vulnerability": "CVE-2021-3177",
+            "featurename": "python3-libs",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3177",
+            "fixedBy": "3.6.8-37.el8",
+            "namespace": "centos-8",
+            "description": "Python 3.x through 3.9.1 has a buffer overflow in PyCArg_repr in _ctypes/callproc.c, which may lead to remote code execution in certain Python applications that accept floating-point numbers as untrusted input, as demonstrated by a 1e300 argument to c_double.from_param. This occurs because sprintf is used unsafely."
+        },
+        {
+            "vulnerability": "CVE-2021-3426",
+            "featurename": "python3-libs",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3426",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "There's a flaw in Python 3's pydoc. A local or adjacent attacker who discovers or is able to convince another local or adjacent user to start a pydoc server could access the server and use it to disclose sensitive information belonging to the other user that they would not normally be able to access. The highest risk of this flaw is to data confidentiality. This flaw affects Python versions before 3.8.9, Python versions before 3.9.3 and Python versions before 3.10.0a7."
+        },
+        {
+            "vulnerability": "CVE-2019-9674",
+            "featurename": "python3-libs",
+            "featureversion": "3.6.8-31.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9674",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Lib/zipfile.py in Python through 3.7.2 allows remote attackers to cause a denial of service (resource consumption) via a ZIP bomb."
+        },
+        {
+            "vulnerability": "CVE-2018-20225",
+            "featurename": "python3-pip-wheel",
+            "featureversion": "9.0.3-18.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20225",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "** DISPUTED ** An issue was discovered in pip (all versions) because it installs the version with the highest version number, even if the user had intended to obtain a private package from a private index. This only affects use of the --extra-index-url option, and exploitation requires that the package does not already exist in the public index (and thus the attacker can put the package there with an arbitrary version number). NOTE: it has been reported that this is intended functionality and the user is responsible for using --extra-index-url securely."
+        },
+        {
+            "vulnerability": "CVE-2021-3572",
+            "featurename": "python3-pip-wheel",
+            "featureversion": "9.0.3-18.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3572",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity."
+        },
+        {
+            "vulnerability": "CVE-2021-20271",
+            "featurename": "python3-rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20271",
+            "fixedBy": "4.14.3-14.el8_4",
+            "namespace": "centos-8",
+            "description": "A flaw was found in RPM's signature check functionality when reading a package file. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package, whose signature header was modified, to cause RPM database corruption and execute code. The highest threat from this vulnerability is to data integrity, confidentiality, and system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-3421",
+            "featurename": "python3-rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3421",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in the RPM package in the read functionality. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package or compromise an RPM repository, to cause RPM database corruption. The highest threat from this vulnerability is to data integrity. This flaw affects RPM versions before 4.17.0-alpha."
+        },
+        {
+            "vulnerability": "CVE-2021-35937",
+            "featurename": "python3-rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35937",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-35938",
+            "featurename": "python3-rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35938",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-35939",
+            "featurename": "python3-rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35939",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-20266",
+            "featurename": "python3-rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20266",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in RPM's hdrblobInit() in lib/header.c. This flaw allows an attacker who can modify the rpmdb to cause an out-of-bounds read. The highest threat from this vulnerability is to system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-20271",
+            "featurename": "rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20271",
+            "fixedBy": "4.14.3-14.el8_4",
+            "namespace": "centos-8",
+            "description": "A flaw was found in RPM's signature check functionality when reading a package file. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package, whose signature header was modified, to cause RPM database corruption and execute code. The highest threat from this vulnerability is to data integrity, confidentiality, and system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-3421",
+            "featurename": "rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3421",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in the RPM package in the read functionality. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package or compromise an RPM repository, to cause RPM database corruption. The highest threat from this vulnerability is to data integrity. This flaw affects RPM versions before 4.17.0-alpha."
+        },
+        {
+            "vulnerability": "CVE-2021-35937",
+            "featurename": "rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35937",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-35938",
+            "featurename": "rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35938",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-35939",
+            "featurename": "rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35939",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-20266",
+            "featurename": "rpm",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20266",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in RPM's hdrblobInit() in lib/header.c. This flaw allows an attacker who can modify the rpmdb to cause an out-of-bounds read. The highest threat from this vulnerability is to system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-20271",
+            "featurename": "rpm-build-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20271",
+            "fixedBy": "4.14.3-14.el8_4",
+            "namespace": "centos-8",
+            "description": "A flaw was found in RPM's signature check functionality when reading a package file. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package, whose signature header was modified, to cause RPM database corruption and execute code. The highest threat from this vulnerability is to data integrity, confidentiality, and system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-3421",
+            "featurename": "rpm-build-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3421",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in the RPM package in the read functionality. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package or compromise an RPM repository, to cause RPM database corruption. The highest threat from this vulnerability is to data integrity. This flaw affects RPM versions before 4.17.0-alpha."
+        },
+        {
+            "vulnerability": "CVE-2021-35937",
+            "featurename": "rpm-build-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35937",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-35938",
+            "featurename": "rpm-build-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35938",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-35939",
+            "featurename": "rpm-build-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35939",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-20266",
+            "featurename": "rpm-build-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20266",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in RPM's hdrblobInit() in lib/header.c. This flaw allows an attacker who can modify the rpmdb to cause an out-of-bounds read. The highest threat from this vulnerability is to system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-20271",
+            "featurename": "rpm-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20271",
+            "fixedBy": "4.14.3-14.el8_4",
+            "namespace": "centos-8",
+            "description": "A flaw was found in RPM's signature check functionality when reading a package file. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package, whose signature header was modified, to cause RPM database corruption and execute code. The highest threat from this vulnerability is to data integrity, confidentiality, and system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-3421",
+            "featurename": "rpm-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-3421",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in the RPM package in the read functionality. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package or compromise an RPM repository, to cause RPM database corruption. The highest threat from this vulnerability is to data integrity. This flaw affects RPM versions before 4.17.0-alpha."
+        },
+        {
+            "vulnerability": "CVE-2021-35937",
+            "featurename": "rpm-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35937",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A race condition vulnerability was found in rpm. A local unprivileged user could use this flaw to bypass the checks that were introduced in response to CVE-2017-7500 and CVE-2017-7501, potentially gaining root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-35938",
+            "featurename": "rpm-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35938",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A symbolic link issue was found in rpm. It occurs when rpm sets the desired permissions and credentials after installing a file. A local unprivileged user could use this flaw to exchange the original file with a symbolic link to a security-critical file and escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-35939",
+            "featurename": "rpm-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-35939",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "It was found that the fix for CVE-2017-7500 and CVE-2017-7501 was incomplete: the check was only implemented for the parent directory of the file to be created. A local unprivileged user who owns another ancestor directory could potentially use this flaw to gain root privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability."
+        },
+        {
+            "vulnerability": "CVE-2021-20266",
+            "featurename": "rpm-libs",
+            "featureversion": "4.14.3-4.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20266",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in RPM's hdrblobInit() in lib/header.c. This flaw allows an attacker who can modify the rpmdb to cause an out-of-bounds read. The highest threat from this vulnerability is to system availability."
+        },
+        {
+            "vulnerability": "CVE-2019-5827",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-5827",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Integer overflow in SQLite via WebSQL in Google Chrome prior to 74.0.3729.131 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page."
+        },
+        {
+            "vulnerability": "CVE-2019-13750",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-13750",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Insufficient data validation in SQLite in Google Chrome prior to 79.0.3945.79 allowed a remote attacker to bypass defense-in-depth measures via a crafted HTML page."
+        },
+        {
+            "vulnerability": "CVE-2019-13751",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-13751",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Uninitialized data in SQLite in Google Chrome prior to 79.0.3945.79 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page."
+        },
+        {
+            "vulnerability": "CVE-2019-19603",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-19603",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "SQLite 3.30.1 mishandles certain SELECT statements with a nonexistent VIEW, leading to an application crash."
+        },
+        {
+            "vulnerability": "CVE-2020-13434",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-13434",
+            "fixedBy": "3.26.0-13.el8",
+            "namespace": "centos-8",
+            "description": "SQLite through 3.32.0 has an integer overflow in sqlite3_str_vappendf in printf.c."
+        },
+        {
+            "vulnerability": "CVE-2020-13435",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-13435",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "SQLite through 3.32.0 has a segmentation fault in sqlite3ExprCodeTarget in expr.c."
+        },
+        {
+            "vulnerability": "CVE-2020-15358",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-15358",
+            "fixedBy": "3.26.0-13.el8",
+            "namespace": "centos-8",
+            "description": "In SQLite before 3.32.3, select.c mishandles query-flattener optimization, leading to a multiSelectOrderBy heap overflow because of misuse of transitive properties for constant propagation."
+        },
+        {
+            "vulnerability": "CVE-2019-19244",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-19244",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "sqlite3Select in select.c in SQLite 3.30.1 allows a crash if a sub-select uses both DISTINCT and window functions, and also has certain ORDER BY usage."
+        },
+        {
+            "vulnerability": "CVE-2019-9936",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9936",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "In SQLite 3.27.2, running fts5 prefix queries inside a transaction could trigger a heap-based buffer over-read in fts5HashEntrySort in sqlite3.c, which may lead to an information leak. This is related to ext/fts5/fts5_hash.c."
+        },
+        {
+            "vulnerability": "CVE-2019-9937",
+            "featurename": "sqlite-libs",
+            "featureversion": "3.26.0-11.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9937",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "In SQLite 3.27.2, interleaving reads and writes in a single transaction with an fts5 virtual table will lead to a NULL Pointer Dereference in fts5ChunkIterate in sqlite3.c. This is related to ext/fts5/fts5_hash.c and ext/fts5/fts5_index.c."
+        },
+        {
+            "vulnerability": "CVE-2021-33910",
+            "featurename": "systemd",
+            "featureversion": "239-41.el8_3",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-33910",
+            "fixedBy": "239-45.el8_4.2",
+            "namespace": "centos-8",
+            "description": "basic/unit-name.c in systemd prior to 246.15, 247.8, 248.5, and 249.1 has a Memory Allocation with an Excessive Size Value (involving strdupa and alloca for a pathname controlled by a local attacker) that results in an operating system crash."
+        },
+        {
+            "vulnerability": "CVE-2018-20839",
+            "featurename": "systemd",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20839",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "systemd 242 changes the VT1 mode upon a logout, which allows attackers to read cleartext passwords in certain circumstances, such as watching a shutdown, or using Ctrl-Alt-F1 and Ctrl-Alt-F2. This occurs because the KDGKBMODE (aka current keyboard mode) check is mishandled."
+        },
+        {
+            "vulnerability": "CVE-2019-3842",
+            "featurename": "systemd",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-3842",
+            "fixedBy": "239-45.el8",
+            "namespace": "centos-8",
+            "description": "In systemd before v242-rc4, it was discovered that pam_systemd does not properly sanitize the environment before using the XDG_SEAT variable. It is possible for an attacker, in some particular configurations, to set a XDG_SEAT environment variable which allows for commands to be checked against polkit policies using the \"allow_active\" element rather than \"allow_any\"."
+        },
+        {
+            "vulnerability": "CVE-2020-13776",
+            "featurename": "systemd",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-13776",
+            "fixedBy": "239-45.el8",
+            "namespace": "centos-8",
+            "description": "systemd through v245 mishandles numerical usernames such as ones composed of decimal digits or 0x followed by hex digits, as demonstrated by use of root privileges when privileges of the 0x0 user account were intended. NOTE: this issue exists because of an incomplete fix for CVE-2017-1000082."
+        },
+        {
+            "vulnerability": "CVE-2021-33910",
+            "featurename": "systemd-libs",
+            "featureversion": "239-41.el8_3",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-33910",
+            "fixedBy": "239-45.el8_4.2",
+            "namespace": "centos-8",
+            "description": "basic/unit-name.c in systemd prior to 246.15, 247.8, 248.5, and 249.1 has a Memory Allocation with an Excessive Size Value (involving strdupa and alloca for a pathname controlled by a local attacker) that results in an operating system crash."
+        },
+        {
+            "vulnerability": "CVE-2018-20839",
+            "featurename": "systemd-libs",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20839",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "systemd 242 changes the VT1 mode upon a logout, which allows attackers to read cleartext passwords in certain circumstances, such as watching a shutdown, or using Ctrl-Alt-F1 and Ctrl-Alt-F2. This occurs because the KDGKBMODE (aka current keyboard mode) check is mishandled."
+        },
+        {
+            "vulnerability": "CVE-2019-3842",
+            "featurename": "systemd-libs",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-3842",
+            "fixedBy": "239-45.el8",
+            "namespace": "centos-8",
+            "description": "In systemd before v242-rc4, it was discovered that pam_systemd does not properly sanitize the environment before using the XDG_SEAT variable. It is possible for an attacker, in some particular configurations, to set a XDG_SEAT environment variable which allows for commands to be checked against polkit policies using the \"allow_active\" element rather than \"allow_any\"."
+        },
+        {
+            "vulnerability": "CVE-2020-13776",
+            "featurename": "systemd-libs",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-13776",
+            "fixedBy": "239-45.el8",
+            "namespace": "centos-8",
+            "description": "systemd through v245 mishandles numerical usernames such as ones composed of decimal digits or 0x followed by hex digits, as demonstrated by use of root privileges when privileges of the 0x0 user account were intended. NOTE: this issue exists because of an incomplete fix for CVE-2017-1000082."
+        },
+        {
+            "vulnerability": "CVE-2021-33910",
+            "featurename": "systemd-pam",
+            "featureversion": "239-41.el8_3",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-33910",
+            "fixedBy": "239-45.el8_4.2",
+            "namespace": "centos-8",
+            "description": "basic/unit-name.c in systemd prior to 246.15, 247.8, 248.5, and 249.1 has a Memory Allocation with an Excessive Size Value (involving strdupa and alloca for a pathname controlled by a local attacker) that results in an operating system crash."
+        },
+        {
+            "vulnerability": "CVE-2018-20839",
+            "featurename": "systemd-pam",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20839",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "systemd 242 changes the VT1 mode upon a logout, which allows attackers to read cleartext passwords in certain circumstances, such as watching a shutdown, or using Ctrl-Alt-F1 and Ctrl-Alt-F2. This occurs because the KDGKBMODE (aka current keyboard mode) check is mishandled."
+        },
+        {
+            "vulnerability": "CVE-2019-3842",
+            "featurename": "systemd-pam",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-3842",
+            "fixedBy": "239-45.el8",
+            "namespace": "centos-8",
+            "description": "In systemd before v242-rc4, it was discovered that pam_systemd does not properly sanitize the environment before using the XDG_SEAT variable. It is possible for an attacker, in some particular configurations, to set a XDG_SEAT environment variable which allows for commands to be checked against polkit policies using the \"allow_active\" element rather than \"allow_any\"."
+        },
+        {
+            "vulnerability": "CVE-2020-13776",
+            "featurename": "systemd-pam",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-13776",
+            "fixedBy": "239-45.el8",
+            "namespace": "centos-8",
+            "description": "systemd through v245 mishandles numerical usernames such as ones composed of decimal digits or 0x followed by hex digits, as demonstrated by use of root privileges when privileges of the 0x0 user account were intended. NOTE: this issue exists because of an incomplete fix for CVE-2017-1000082."
+        },
+        {
+            "vulnerability": "CVE-2021-33910",
+            "featurename": "systemd-udev",
+            "featureversion": "239-41.el8_3",
+            "severity": "High",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-33910",
+            "fixedBy": "239-45.el8_4.2",
+            "namespace": "centos-8",
+            "description": "basic/unit-name.c in systemd prior to 246.15, 247.8, 248.5, and 249.1 has a Memory Allocation with an Excessive Size Value (involving strdupa and alloca for a pathname controlled by a local attacker) that results in an operating system crash."
+        },
+        {
+            "vulnerability": "CVE-2018-20839",
+            "featurename": "systemd-udev",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20839",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "systemd 242 changes the VT1 mode upon a logout, which allows attackers to read cleartext passwords in certain circumstances, such as watching a shutdown, or using Ctrl-Alt-F1 and Ctrl-Alt-F2. This occurs because the KDGKBMODE (aka current keyboard mode) check is mishandled."
+        },
+        {
+            "vulnerability": "CVE-2019-3842",
+            "featurename": "systemd-udev",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-3842",
+            "fixedBy": "239-45.el8",
+            "namespace": "centos-8",
+            "description": "In systemd before v242-rc4, it was discovered that pam_systemd does not properly sanitize the environment before using the XDG_SEAT variable. It is possible for an attacker, in some particular configurations, to set a XDG_SEAT environment variable which allows for commands to be checked against polkit policies using the \"allow_active\" element rather than \"allow_any\"."
+        },
+        {
+            "vulnerability": "CVE-2020-13776",
+            "featurename": "systemd-udev",
+            "featureversion": "239-41.el8_3",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2020-13776",
+            "fixedBy": "239-45.el8",
+            "namespace": "centos-8",
+            "description": "systemd through v245 mishandles numerical usernames such as ones composed of decimal digits or 0x followed by hex digits, as demonstrated by use of root privileges when privileges of the 0x0 user account were intended. NOTE: this issue exists because of an incomplete fix for CVE-2017-1000082."
+        },
+        {
+            "vulnerability": "CVE-2005-2541",
+            "featurename": "tar",
+            "featureversion": "2:1.30-5.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2005-2541",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges."
+        },
+        {
+            "vulnerability": "CVE-2021-20193",
+            "featurename": "tar",
+            "featureversion": "2:1.30-5.el8",
+            "severity": "Medium",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-20193",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "A flaw was found in the src/list.c of tar 1.33 and earlier. This flaw allows an attacker who can submit a crafted input file to tar to cause uncontrolled consumption of memory. The highest threat from this vulnerability is to system availability."
+        },
+        {
+            "vulnerability": "CVE-2019-9923",
+            "featurename": "tar",
+            "featureversion": "2:1.30-5.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2019-9923",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers."
+        },
+        {
+            "vulnerability": "CVE-2021-37600",
+            "featurename": "util-linux",
+            "featureversion": "2.32.1-24.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2021-37600",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "An integer overflow in util-linux through 2.37.1 can potentially cause a buffer overflow if an attacker were able to use system resources in a way that leads to a large number in the /proc/sysvipc/sem file."
+        },
+        {
+            "vulnerability": "CVE-2018-20786",
+            "featurename": "vim-minimal",
+            "featureversion": "2:8.0.1763-15.el8",
+            "severity": "Low",
+            "link": "https://avd.aquasec.com/nvd/cve-2018-20786",
+            "fixedBy": "",
+            "namespace": "centos-8",
+            "description": "libvterm through 0+bzr726, as used in Vim and other products, mishandles certain out-of-memory conditions, leading to a denial of service (application crash), related to screen.c, state.c, and vterm.c."
+        }
+    ]
+}
